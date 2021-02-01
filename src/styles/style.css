@@ -1,0 +1,150 @@
+body {
+    background: #CFFBF5;
+    color: #0E025E;
+    font-family: 'Roboto', sans-serif;
+    font-size: 12px;
+}
+
+h1 {
+    font-size: 60px;
+    text-align: center;
+    margin: 0;
+    padding: 20px 0;
+    color: #615ACD;
+    text-shadow: 3px 3px 1px #1C0A93;
+}
+
+h2 {
+    font-size: 30px;
+    margin: 0;
+    padding: 20px 0;
+    color: #615ACD;
+}
+
+h3 {
+    font-size: 20px;
+    margin: 0;
+    padding: 20px 0;
+    color: #615ACD;
+}
+
+p {
+    color:#0E025E;
+    display: inline-block
+}
+
+#wrapper {
+    width: 95%; /*900px;*/
+    outline: 1px solid #280353;
+    padding: 10px;
+    margin: 0 auto;/*60px auto;*/
+    /*height: 1024px; */
+}
+
+#header {
+    background:#7AFAF8;
+    height: 220px;    
+    width: 100%; /*900px;*/
+	display: flex; /* Включаем режим Flexbox. */
+	justify-content: space-between; /* Распределяем элементы внутри шапки */
+    align-items: center; /* Выравниваем элементы вертикально по центру. */
+    background-image: linear-gradient(#07f8f4, white,#07f8f4);
+	/*position: fixed;*/
+}
+
+#navigation {
+    width: 100%; /*900px;*/
+    height: 400px; 
+    display: flex; /* Включаем режим Flexbox. */
+	justify-content: space-between; /* Распределяем элементы внутри шапки */
+    align-items: center; /* Выравниваем элементы вертикально по центру. */      
+}
+
+#content {
+	/*margin-top: 150px;*/
+    background-image: url(../images/6.jpg);
+    width: 100%; /*900px;*/
+    height: 100%; /*624px;*/
+}
+
+#menu {
+	/*line-height: 1.5;*/
+    background-image: url(../images/6.jpg);
+    /*float: left; /*right;*/ 
+    width: 100%; /*200px;*/
+    height: 100%; /*624px;*/
+    display: flex;
+    justify-content: space-around;
+    /*justify-content: center;*/
+    /*margin: 0 20px;*/
+    /*white-space: pre; /*как сделать пробел между строк*/
+}
+
+#menu a:hover{
+	color: rgb(5, 49, 85);
+}
+
+#footer {
+    background: #7AFAF8; /*#017D7B;*/
+    height: 120px;
+    width: 100%; /*900px;*/
+    /*max-width: 1024px; /*максимальная ширина может иметь другое значение*/
+    /*padding: 0 15px;*/
+    margin: 0 auto;
+    font-family: 'Roboto', sans-serif;
+    color: #f6f5fa;
+    text-align: center;
+}
+
+#footer a:hover{
+	color: rgb(33, 5, 78);
+}
+
+.container {
+    width: 100%;
+    max-width: 1024px; /*максимальная ширина может иметь другое значение*/
+    padding: 0 15px;
+    margin: 0 auto;
+}
+
+.app {
+    max-width: 1000px;
+    margin: 50px auto;
+}
+
+.list {
+    display: flex;
+    justify-content: space-between;
+}
+
+.card {
+    width: 200px;
+    padding: 10px;
+    border: 1px solid#1C0A93;
+    border-radius: 3px;
+    transition: box-shadow .3s ease-in-out;
+}
+
+.card:hover {
+    box-shadow: 2px 2px 0 #1C0A93;
+}
+
+.card.marked {
+    border: 2px solid #1C0A93;
+}
+
+.card-img {
+    display: flex;
+    align-items: center;
+    height: 150px;
+}
+
+.card img {
+    width: 100%;
+}
+
+#bg{
+    width: 100%;
+    height: 30%;
+    background-image: url(images/react-3.png);
+}

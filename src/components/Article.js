@@ -1,17 +1,16 @@
 import React from 'react';
-import {render} from 'react-dom';
 
-import App from './components/App'
-
-render(<App/>, document.getElementById('root'))
-
-/*
-var NewComponent = React.createClass({
-  render: function() {
+function Article() {
+    //const {article} = props
+    //const Header = <section>{article.Header}</section>
+    //const navigation = <section>{article.navigation}</section>
+    //const content = <section>{article.content}</section>
+    //const footer = <section>{article.footer}</section>
     return (
-
-      <div id="wrapper">
+        <div>
+            <div id="wrapper">
         <div id="header">
+       
           <div className="header-left">
             <img src="images/react-16.png" alt="React logotype" />
           </div>
@@ -22,7 +21,9 @@ var NewComponent = React.createClass({
             <img src="images/react-2.png" alt="React logotype" />
           </div>
         </div>
+
         <div id="navigation">
+  
           <div className="navigation-left">
             <img src="images/react-12.png" alt="React logotype" />
           </div>
@@ -39,7 +40,9 @@ var NewComponent = React.createClass({
             <img src="images/react-14.jpg" alt="React logotype" />
           </div>
         </div>
+
         <div id="content">
+       
           <h1>Обсуждаемый материал:</h1>
           <div className="app">
             <div className="list" />
@@ -53,7 +56,9 @@ var NewComponent = React.createClass({
             <h3><a href="сontent/css-1.html" target="_blank">6-читать тему</a></h3>
           </div>
         </div>
+
         <div id="footer">
+        
           <h2>Ирина Тютюн</h2>
           <p>Опубликовано 
             <time dateTime="2021-01-08">08 января 2021</time></p>
@@ -62,45 +67,12 @@ var NewComponent = React.createClass({
           <a href="https://ru.depositphotos.com/39223635/stock-illustration-ice-abstract-geometric-vector-background.html" target="_blank">шаблон</a>
         </div>
       </div>
-    );
-  }
-});
-*/
-
-/*
-function Header() {
-
-}
-function Article() {
-  return [
-
-  ]
-
-          <h2>title</h2>
-          <section>body</section>
-
-  )
-  
+        </div>
+    )
 }
 
- render(<Article/>, document.getElementById('root'))
-*/
 
-/*
-import ReactDOM from 'react-dom';
-import './index.css';
-import App from './App';
-import reportWebVitals from './reportWebVitals';
+export default Article
 
-ReactDOM.render(
-  <React.StrictMode>
-    <App />
-  </React.StrictMode>,
-  document.getElementById('root')
-);
 
-// If you want to start measuring performance in your app, pass a function
-// to log results (for example: reportWebVitals(console.log))
-// or send to an analytics endpoint. Learn more: https://bit.ly/CRA-vitals
-reportWebVitals();
-*/
+
