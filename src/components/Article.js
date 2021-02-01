@@ -62,7 +62,7 @@ function Article() {
           <h2>Ирина Тютюн</h2>
           <p>Опубликовано 
             <time dateTime="2021-01-08">08 января 2021</time></p>
-          <a href="https://github.com/Irenkia/React-Intro-2" target="_blank">GitHub</a>
+          <a href="https://github.com/Irenkia/React-Intro-3" target="_blank">GitHub</a>
           <p>  Дизайн фона</p>
           <a href="https://ru.depositphotos.com/39223635/stock-illustration-ice-abstract-geometric-vector-background.html" target="_blank">шаблон</a>
         </div>
