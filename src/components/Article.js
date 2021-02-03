@@ -3,8 +3,6 @@ import Content from './Content';
 import Footer from './Footer';
 import Header from './Header';
 import Navigation from './Navigation';
-import logo16 from 'D:/Onix/React-Intro-3/src/images/react-16.png';
-import logo2 from 'D:/Onix/React-Intro-3/src/images/react-2.png';
 
 //import logo16 from './images/react-16.png';
 function Article() {

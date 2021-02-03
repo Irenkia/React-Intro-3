@@ -1,9 +1,11 @@
 import React from 'react';
 import logo16 from '../images/react-16.png';
 import logo2 from '../images/react-2.png';
+import '../styles/Header.css'
+
 const Header = () => {
     return (
-        <div id="header">
+        <div className='header'>
             <div className="header-left">
                 <img src={logo16} alt="React logotype" />
             </div>

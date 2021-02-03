@@ -1,8 +1,11 @@
 import React from 'react';
+import '../styles/Content.css'
+import Arr from './Arr';
 //import Arr from './Arr';
+
 function Content() {
     return (
-        <div id="content">
+        <div className="content">
 
             <h1>Обсуждаемый материал:</h1>
             <div className="app">

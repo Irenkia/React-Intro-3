@@ -1,8 +1,9 @@
 import React from 'react';
+import '../styles/Footer.css'
 
 function Footer() {
     return (
-        <div id="footer">
+        <div className="footer">
 
             <h2>Ирина Тютюн</h2>
             <p>Опубликовано <time dateTime="2021-01-08">08 января 2021</time></p>

@@ -1,0 +1,12 @@
+.footer {
+    background: #7AFAF8; /*#017D7B;*/
+    height: 120px;
+    width: 100%; /*900px;*/
+    /*max-width: 1024px; /*максимальная ширина может иметь другое значение*/
+    /*padding: 0 15px;*/
+    margin: 0 auto;
+    font-family: 'Roboto', sans-serif;
+    color: #f6f5fa;
+    text-align: center;
+}
+
