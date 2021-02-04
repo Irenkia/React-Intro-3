@@ -1,0 +1,42 @@
+.container {
+    width: 100%;
+    max-width: 1024px; /*максимальная ширина может иметь другое значение*/
+    padding: 0 15px;
+    margin: 0 auto;
+}
+
+.app {
+    max-width: 1000px;
+    margin: 50px auto;
+}
+
+.list {
+    display: flex;
+    justify-content: space-between;
+}
+
+.card {
+    width: 200px;
+    padding: 10px;
+    border: 1px solid#1C0A93;
+    border-radius: 3px;
+    transition: box-shadow .3s ease-in-out;
+}
+
+.card:hover {
+    box-shadow: 2px 2px 0 #1C0A93;
+}
+
+.card.marked {
+    border: 2px solid #1C0A93;
+}
+
+.card-img {
+    display: flex;
+    align-items: center;
+    height: 150px;
+}
+
+.card img {
+    width: 100%;
+}
