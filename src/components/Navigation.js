@@ -13,9 +13,9 @@ function Navigation() {
             <div className="navigation-center">
                 <h2>Входное задание в интернатуру по REACT</h2><br />
                 <h3>Тема:</h3><br />
-                <p style={{ color: '#0E025E' }}>git, node, npm, основы html и css</p><br />
+                <p>git, node, npm, основы html и css</p><br />
                 <h3>Цель: </h3><br />
-                <p style={{ color: '#0E025E' }}>изучить базовые функции git, node, npm.<br />
+                <p>изучить базовые функции git, node, npm.<br />
                     Подготовить к дальнейшей работе систему.<br />
                     Определить уровень умения верстки.</p>
             </div>

@@ -1,6 +1,5 @@
 import React from 'react';
 import '../styles/Content.css'
-import Question from './Question.js';
 
 function Content() {
     return (
@@ -10,9 +9,8 @@ function Content() {
             <div className="app">
                 <div className="list" />
             </div>
+            <div><elQuestion /></div>
 
-            {/*<div><Question /></div>*/}
-            <elQuestion />
 
             <div id="menu">
                 <h3><a href="сontent/version.html" target="_blank" rel="noreferrer">1-читать тему</a></h3>

@@ -10,7 +10,7 @@ const Header = () => {
                 <img src={logo16} alt="React logotype" />
             </div>
             <div className="header-center">
-                <h1 style={{ color: '#0E0352' }}>React Intro</h1>
+                <h1>React Intro</h1>
             </div>
             <div className="header-right">
                 <img src={logo2} alt="React logotype" />

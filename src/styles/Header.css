@@ -33,4 +33,11 @@ h1 {
     padding: 20px 0;
     color: #615ACD;
     text-shadow: 3px 3px 1px #1C0A93;
+    
 }
+
+img {
+    flex-grow: 1;
+    flex-shrink: 1;
+}
+

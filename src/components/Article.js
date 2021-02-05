@@ -4,13 +4,7 @@ import Footer from './Footer';
 import Header from './Header';
 import Navigation from './Navigation';
 
-//import logo16 from './images/react-16.png';
 function Article() {
-  //const {article} = props
-  //const Header = <section>{article.Header}</section>
-  //const navigation = <section>{article.navigation}</section>
-  //const content = <section>{article.content}</section>
-  //const footer = <section>{article.footer}</section>
   return (
 
     <div id="wrapper">
