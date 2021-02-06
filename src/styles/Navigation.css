@@ -1,7 +1,7 @@
 .navigation {
     margin: 0 auto;
     display: grid;
-    width: 7fr;
+    width: 3fr;
     align-items: center;
     grid-template-areas: 
     "l c r";
