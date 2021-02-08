@@ -8,43 +8,61 @@ import logo1c from '../images/css-1.png';
 import '../styles/Question.css'
 
 const Question = (props) => {
+    const number_1 = '1';
+    const number_2 = '2';
+    const number_3 = '3';
+    const number_4 = '4';
+    const number_5 = '5';
+    const number_6 = '6';
+    const description_1 = 'Что такое система контроля версий и зачем она нужна';
+    const description_2 = 'Git : a. checkout, add, commit, pull, push; b. Основы ветвления и слияния';
+    const description_3 = 'Что такое nodejs, зачем он нужен и как устанавливать';
+    const description_4 = 'Что такое менеджер пакетов, установка npm';
+    const description_5 = 'Html: теги, структура html страницы, блочные и строчные элементы, списки, таблицы, атрибуты, текст, якоря, ссылки, w3c валидация';
+    const description_6 = 'Css: стили, классы, идентификаторы, селекторы, псевдоклассы, псевдоэлементы';
+    const logotype_1 = 'version-control-system';
+    const logotype_2 = 'git logotype';
+    const logotype_3 = 'nodejs logotype';
+    const logotype_4 = 'npm logotype';
+    const logotype_5 = 'html logotype';
+    const logotype_6 = 'css logotype';
 
     let DataQuestions = [
         {
-            number: '1',
-            description: 'Что такое система контроля версий и зачем она нужна',
+            number: { number_1 },
+            description: { description_1 },
             img: { logo1v },
-            logotype: 'version-control-system'
+            logotype: { logotype_1 }
         },
         {
-            number: '2',
-            description: 'Git : a. checkout, add, commit, pull, push; b. Основы ветвления и слияния',
+            number: { number_2 },
+            description: { description_2 },
             img: { logo1g },
-            logotype: 'git logotype'
+            logotype: { logotype_2 }
         },
         {
-            number: '3',
-            description: 'Что такое nodejs, зачем он нужен и как устанавливать',
+            number: { number_3 },
+            description: { description_3 },
             img: { logo1n },
-            logotype: 'nodejs logotype'
+            logotype: { logotype_3 }
         },
         {
-            number: '4',
-            description: 'Что такое менеджер пакетов, установка npm',
+            number: { number_4 },
+            description: { description_4 },
             img: { logo1npm },
-            logotype: 'npm logotype'
+            logotype: { logotype_4 }
         },
         {
-            number: '5',
-            description: 'Html: теги, структура html страницы, блочные и строчные элементы, списки, таблицы, атрибуты, текст, якоря, ссылки, w3c валидация',
+            number: { number_5 },
+            description: { description_5 },
             img: { logo1h },
-            logotype: 'html logotype'
+            logotype: { logotype_5 }
         },
         {
-            number: '6',
-            description: 'Css: стили, классы, идентификаторы, селекторы, псевдоклассы, псевдоэлементы',
+            number: { number_6 },
+            description: { description_6 },
             img: { logo1c },
-            logotype: 'css logotype'
+            logotype: { logotype_6 }
         }
 
     ]
