@@ -6,6 +6,7 @@
     background-image: url(../images/6.jpg);
     width: 100%; /*900px;*/
     height: 100%; /*624px;*/
+
 }
 
 #menu {
@@ -15,6 +16,7 @@
     height: 100%; /*624px;*/
     display: flex;
     justify-content: space-around;
+    flex-wrap: wrap;
     /*justify-content: center;*/
     /*margin: 0 20px;*/
     /*white-space: pre; /*как сделать пробел между строк*/

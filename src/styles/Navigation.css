@@ -18,6 +18,8 @@
 
 .navigation-center {
     grid-area: c;
+    text-align: center;
+    margin: auto;
 }
 
 .navigation-right {
