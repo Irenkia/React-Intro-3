@@ -8,3 +8,14 @@
     height: 100%; /*624px;*/
 }
 
+#menu {
+	/*line-height: 1.5;*/
+    /*float: left; /*right;*/ 
+    width: 100%; /*200px;*/
+    height: 100%; /*624px;*/
+    display: flex;
+    justify-content: space-around;
+    /*justify-content: center;*/
+    /*margin: 0 20px;*/
+    /*white-space: pre; /*как сделать пробел между строк*/
+}

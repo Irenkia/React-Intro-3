@@ -1,5 +1,6 @@
 import React from 'react';
 import '../styles/Footer.css'
+import PropTypes from 'prop-types'
 
 function Footer() {
     const CreatorName = 'Ирина Тютюн';
@@ -19,6 +20,10 @@ function Footer() {
         </div>
     );
 
+}
+
+Footer.propTypes = {
+    name: PropTypes.string
 }
 
 export default Footer;

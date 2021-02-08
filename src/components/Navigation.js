@@ -2,6 +2,7 @@ import React from 'react';
 import logo12 from '../images/react-12.png';
 import logo14 from '../images/react-14.jpg';
 import '../styles/Navigation.css'
+import PropTypes from 'prop-types'
 
 function Navigation() {
     const taskTitle = 'Входное задание в интернатуру по REACT';
@@ -34,6 +35,10 @@ function Navigation() {
         </div>
 
     );
+}
+
+Navigation.propTypes = {
+    name: PropTypes.string
 }
 
 export default Navigation;

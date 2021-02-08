@@ -1,5 +1,6 @@
 import React from 'react';
 import '../styles/Content.css'
+import PropTypes from 'prop-types'
 
 function Content() {
     const topicTitle = 'Обсуждаемый материал:';
@@ -19,7 +20,6 @@ function Content() {
             </div>
             <div><elQuestion /></div>
 
-
             <div id="menu">
                 <h3><a href="сontent/version.html" target="_blank" rel="noreferrer">{readTopic_1}</a></h3>
                 <h3><a href="сontent/git.html" target="_blank" rel="noreferrer">{readTopic_2}</a></h3>
@@ -31,6 +31,10 @@ function Content() {
         </div>
 
     );
+}
+
+Content.propTypes = {
+    name: PropTypes.string
 }
 
 export default Content;

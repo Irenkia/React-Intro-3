@@ -2,6 +2,7 @@ import React from 'react';
 import logo16 from '../images/react-16.png';
 import logo2 from '../images/react-2.png';
 import '../styles/Header.css'
+import PropTypes from 'prop-types'
 
 const Header = () => {
     const heading = 'React Intro';
@@ -20,6 +21,10 @@ const Header = () => {
         </div>
 
     );
+}
+
+Header.propTypes = {
+    name: PropTypes.string
 }
 
 export default Header;

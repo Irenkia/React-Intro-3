@@ -6,6 +6,7 @@ import logo1npm from '../images/npm-2.png';
 import logo1h from '../images/html-1.png';
 import logo1c from '../images/css-1.png';
 import '../styles/Question.css'
+import PropTypes from 'prop-types'
 
 const Question = (props) => {
     const number_1 = '1';
@@ -89,6 +90,10 @@ const Question = (props) => {
 
     )
 };
+
+Question.propTypes = {
+    name: PropTypes.string
+}
 
 export default Question;
 
