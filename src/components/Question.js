@@ -9,12 +9,12 @@ import '../styles/Question.css'
 import PropTypes from 'prop-types'
 
 const Question = (props) => {
-    const number_1 = '1';
-    const number_2 = '2';
-    const number_3 = '3';
-    const number_4 = '4';
-    const number_5 = '5';
-    const number_6 = '6';
+    const number_1 = 1;
+    const number_2 = 2;
+    const number_3 = 3;
+    const number_4 = 4;
+    const number_5 = 5;
+    const number_6 = 6;
     const description_1 = 'Что такое система контроля версий и зачем она нужна';
     const description_2 = 'Git : a. checkout, add, commit, pull, push; b. Основы ветвления и слияния';
     const description_3 = 'Что такое nodejs, зачем он нужен и как устанавливать';
