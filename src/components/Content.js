@@ -3,6 +3,7 @@ import '../styles/Content.css'
 import PropTypes from 'prop-types'
 //import Question from './Question';
 import Table from './Table';
+import Example from './Example';
 function Content() {
     const topicTitle = 'Обсуждаемый материал:';
     const number_1 = 1;
@@ -38,6 +39,7 @@ function Content() {
                 <h3><a href="сontent/html-1.html" target="_blank" rel="noreferrer">{number_5}{readTopic_5}</a></h3>
                 <h3><a href="сontent/css-1.html" target="_blank" rel="noreferrer">{number_6}{readTopic_6}</a></h3>
             </div>
+            <Example />
         </div>
 
     );
