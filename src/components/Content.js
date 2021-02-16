@@ -2,7 +2,7 @@ import React from 'react';
 import '../styles/Content.css'
 import PropTypes from 'prop-types'
 //import Question from './Question';
-
+import Table from './Table';
 function Content() {
     const topicTitle = 'Обсуждаемый материал:';
     const number_1 = 1;
@@ -23,6 +23,8 @@ function Content() {
         <div className="content">
 
             <h1>{topicTitle}</h1>
+
+            <Table />
             <div className="app">
                 <div className="list" />
             </div>
