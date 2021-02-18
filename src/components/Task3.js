@@ -49,7 +49,7 @@ class TableToyota extends React.Component {
     render() {
         return (
             <div>
-                <table className="myTable">
+                <table className="Table">
                     <thead>
                         <tr>
                             <th>
@@ -111,7 +111,8 @@ const Task3 = () => {
     );
     return (
         <div className="Table">
-            <h2>Задание № 3</h2>
+            <h3>Задание № 3</h3>
+            <h2>Тойота Камри </h2>
             <TableToyota />
         </div>
     );
