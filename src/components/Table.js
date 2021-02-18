@@ -45,49 +45,51 @@ const ProductTable = (props) => {
         return sortConfig.key === name ? sortConfig.direction : undefined;
     };
     return (
-        <table>
-            <caption>Продукты</caption>
-            <thead>
-                <tr>
-                    <th>
-                        <button
-                            type="button"
-                            onClick={() => requestSort('name')}
-                            className={getClassNamesFor('name')}
-                        >
-                            Наименование
+        <div>
+            <table>
+                <caption>Продукты</caption>
+                <thead>
+                    <tr>
+                        <th>
+                            <button
+                                type="button"
+                                onClick={() => requestSort('name')}
+                                className={getClassNamesFor('name')}
+                            >
+                                Наименование
                         </button>
-                    </th>
-                    <th>
-                        <button
-                            type="button"
-                            onClick={() => requestSort('price')}
-                            className={getClassNamesFor('price')}
-                        >
-                            Цена
+                        </th>
+                        <th>
+                            <button
+                                type="button"
+                                onClick={() => requestSort('price')}
+                                className={getClassNamesFor('price')}
+                            >
+                                Цена
                         </button>
-                    </th>
-                    <th>
-                        <button
-                            type="button"
-                            onClick={() => requestSort('stock')}
-                            className={getClassNamesFor('stock')}
-                        >
-                            Срок годности
+                        </th>
+                        <th>
+                            <button
+                                type="button"
+                                onClick={() => requestSort('stock')}
+                                className={getClassNamesFor('stock')}
+                            >
+                                Срок годности
                          </button>
-                    </th>
-                </tr>
-            </thead>
-            <tbody>
-                {items.map((item) => (
-                    <tr key={item.id}>
-                        <td>{item.name}</td>
-                        <td>{item.price}</td>
-                        <td>{item.stock}</td>
+                        </th>
                     </tr>
-                ))}
-            </tbody>
-        </table>
+                </thead>
+                <tbody>
+                    {items.map((item) => (
+                        <tr key={item.id}>
+                            <td>{item.name}</td>
+                            <td>{item.price}</td>
+                            <td>{item.stock}</td>
+                        </tr>
+                    ))}
+                </tbody>
+            </table>
+        </div>
     );
 };
 
