@@ -1,3 +1,4 @@
+
 import React from 'react';
 import logo1v from '../images/version-control-system.png';
 import logo1g from '../images/git-4.jpg';
@@ -30,64 +31,68 @@ const Question = (props) => {
 
     let DataQuestions = [
         {
-            number: { number_1 },
-            description: { description_1 },
-            img: { logo1v },
-            logotype: { logotype_1 }
+            number: number_1,
+            description: description_1,
+            img: logo1v,
+            logotype: logotype_1
         },
         {
-            number: { number_2 },
-            description: { description_2 },
-            img: { logo1g },
-            logotype: { logotype_2 }
+            number: number_2,
+            description: description_2,
+            img: logo1g,
+            logotype: logotype_2
         },
         {
-            number: { number_3 },
-            description: { description_3 },
-            img: { logo1n },
-            logotype: { logotype_3 }
+            number: number_3,
+            description: description_3,
+            img: logo1n,
+            logotype: logotype_3
         },
         {
-            number: { number_4 },
-            description: { description_4 },
-            img: { logo1npm },
-            logotype: { logotype_4 }
+            number: number_4,
+            description: description_4,
+            img: logo1npm,
+            logotype: logotype_4
         },
         {
-            number: { number_5 },
-            description: { description_5 },
-            img: { logo1h },
-            logotype: { logotype_5 }
+            number: number_5,
+            description: description_5,
+            img: logo1h,
+            logotype: logotype_5
         },
         {
-            number: { number_6 },
-            description: { description_6 },
-            img: { logo1c },
-            logotype: { logotype_6 }
+            number: number_6,
+            description: description_6,
+            img: logo1c,
+            logotype: logotype_6
         }
 
     ]
 
-    let elQuestion = DataQuestions.map((el) => {
+    let ElQuestion = DataQuestions.map((el) => {
         return (
-            <question number={el.number} description={el.description} img={el.img} logotype={el.logotype} />
+            <div className="card">
+                <question number={el.number} description={el.description} img={el.img} logotype={el.logotype} />
+
+                <div className="card-img">
+                    <img
+                        src={el.img}
+                        alt={el.logotype} />
+                </div>
+                <div>
+                    <h1>{el.number}</h1>
+                    <p>{el.description}</p>
+                </div>
+            </div>
         )
     });
 
     return (
-        <div className="card">
-            {elQuestion}
-            <div className="card-img">
-                <img
-                    src={props.el.img}
-                    alt={props.el.logotype} />
-            </div>
-            <div>
-                <h1>{props.el.number}</h1>
-                <p>{props.el.description}</p>
+        <div className="app">
+            <div className="list">
+                {ElQuestion}
             </div>
         </div>
-
     )
 };
 

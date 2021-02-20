@@ -49,6 +49,17 @@ img {
         font-size: 40px;
     }
 
+    .app {
+        max-width: 1000px;
+        margin: 50px auto;
+    }
+    
+    .list {
+        flex-flow: column;
+        max-width: 100%;
+        align-items: center;
+    }
+
     .navigation .navigation-left .navigation-right{
         flex-flow: column;
         max-width: 100%;
