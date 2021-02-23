@@ -31,36 +31,42 @@ const Question = (props) => {
 
     let DataQuestions = [
         {
+            id: 1,
             number: number_1,
             description: description_1,
             img: logo1v,
             logotype: logotype_1
         },
         {
+            id: 2,
             number: number_2,
             description: description_2,
             img: logo1g,
             logotype: logotype_2
         },
         {
+            id: 3,
             number: number_3,
             description: description_3,
             img: logo1n,
             logotype: logotype_3
         },
         {
+            id: 4,
             number: number_4,
             description: description_4,
             img: logo1npm,
             logotype: logotype_4
         },
         {
+            id: 5,
             number: number_5,
             description: description_5,
             img: logo1h,
             logotype: logotype_5
         },
         {
+            id: 6,
             number: number_6,
             description: description_6,
             img: logo1c,
@@ -71,8 +77,8 @@ const Question = (props) => {
 
     let ElQuestion = DataQuestions.map((el) => {
         return (
-            <div className="card">
-                <question number={el.number} description={el.description} img={el.img} logotype={el.logotype} />
+            <div className="card" key={el.id}>
+                {/*<question number={el.number} description={el.description} img={el.img} logotype={el.logotype} />*/}
 
                 <div className="card-img">
                     <img

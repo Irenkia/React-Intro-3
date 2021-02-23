@@ -1,11 +1,11 @@
-import React from 'react';
+import React, { useState, useMemo } from 'react';
 import '../styles/Table.css';
 //import ProductTable from './ProductTable'; 
 
-const useSortableData = (items, config = null) => {
-    const [sortConfig, setSortConfig] = React.useState(config);
+const UseSortableData = (items, config = null) => {
+    const [sortConfig, setSortConfig] = useState(config);
 
-    const sortedItems = React.useMemo(() => {
+    const sortedItems = useMemo(() => {
         let sortableItems = [...items];
         if (sortConfig !== null) {
             sortableItems.sort((a, b) => {
@@ -37,7 +37,7 @@ const useSortableData = (items, config = null) => {
 };
 
 const ProductTable = (props) => {
-    const { items, requestSort, sortConfig } = useSortableData(props.products);
+    const { items, requestSort, sortConfig } = UseSortableData(props.products);
     const getClassNamesFor = (name) => {
         if (!sortConfig) {
             return;

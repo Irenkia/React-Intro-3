@@ -1,4 +1,4 @@
-import React from 'react';
+import React, {Component} from 'react';
 import '../styles/Table.css';
 
 const ToyotaCamry = [
@@ -12,7 +12,7 @@ const ToyotaCamry = [
     [2017, "8 поколение"],
 ];
 
-class TableToyota extends React.Component {
+class TableToyota extends Component {
     data = ToyotaCamry;
     constructor(props) {
         super(props);
