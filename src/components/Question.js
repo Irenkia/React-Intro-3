@@ -85,10 +85,14 @@ const Question = (props) => {
                         src={el.img}
                         alt={el.logotype} />
                 </div>
-                <div>
+                <div id="theme">
                     <h1>{el.number}</h1>
                     <p>{el.description}</p>
+
+
+
                 </div>
+                {props.theme}
             </div>
         )
     });

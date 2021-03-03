@@ -1,4 +1,4 @@
-import React, {Component} from 'react';
+import React, { Component } from 'react';
 import '../styles/Table.css';
 
 const ToyotaCamry = [
@@ -11,7 +11,6 @@ const ToyotaCamry = [
     [2011, "7 поколение"],
     [2017, "8 поколение"],
 ];
-
 class TableToyota extends Component {
     data = ToyotaCamry;
     constructor(props) {
@@ -87,28 +86,41 @@ class TableToyota extends Component {
 
 let ToyotaCamryReverse = ToyotaCamry.reverse();
 
-function GnomeSort(A) {
-    var n = A.length, i = 1, j = 2;
+function GnomeSort(a, b) {
+    return a > b;
+}
+let s = ToyotaCamry.sort(GnomeSort);
+GnomeSort(ToyotaCamryReverse);
+
+function GnomeSort2(A) {
+    let n = A.length, i = 1, j = 2;
     while (i < n) {
-        if (A[i - 1] < A[i]) { i = j; j++; }
+        if (A[i - 1] < A[i]) {
+            i = j; j++;
+        }
         else {
-            var t = A[i - 1]; A[i - 1] = A[i]; A[i] = t;
+            let t = A[i - 1]; A[i - 1] = A[i]; A[i] = t;
             i--;
             if (i === 0) { i = j; j++; }
         }
     }
     return A;
 }
-GnomeSort(ToyotaCamryReverse);
+let d = GnomeSort2(ToyotaCamryReverse);
+
 
 const Task3 = () => {
+    console.log(ToyotaCamry);
     console.log(ToyotaCamryReverse);
+    console.log(d);
+    console.log(s);
     console.log(
         [3, 9, 1, 7, 2, 8, 4].sort()
     );
     console.log(
         [3, 9, 1, 7, 2, 8, 4].sort((a, b) => a - b)
     );
+
     return (
         <div className="Table">
             <h3>Задание № 3</h3>
@@ -118,4 +130,8 @@ const Task3 = () => {
     );
 };
 
+
 export default Task3;
+
+
+

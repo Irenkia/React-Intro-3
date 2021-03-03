@@ -21,6 +21,8 @@
     border: 1px solid#1C0A93;
     border-radius: 3px;
     transition: box-shadow .3s ease-in-out;
+    color:#0E025E;
+    
 }
 
 .card:hover {
@@ -39,4 +41,8 @@
 
 .card img {
     width: 100%;
+}
+
+#theme{
+    font-size: 12px;
 }

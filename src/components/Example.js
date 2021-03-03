@@ -8,7 +8,6 @@ class Example extends React.Component {
         super();
         this.state = {
             items: ['Коля', 'Вася', 'Дима', 'Иван', 'Петя']
-
         };
     }
 

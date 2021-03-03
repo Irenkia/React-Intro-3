@@ -7,7 +7,7 @@ import Navigation from './Navigation';
 function Article() {
   return (
 
-    <div id="wrapper">
+    <div className="wrapper">
       <Header />
       <Navigation />
       <Content />
