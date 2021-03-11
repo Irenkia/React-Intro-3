@@ -1,90 +1,201 @@
 
-import React from 'react';
+//import React from 'react';
+import React, { Component } from 'react';
 import '../styles/Table.css';
 
-let ArrTask4 = [
+const ArrTask4 = [
     {
-        id: 1,
-        discription: {
-            year: 1982, name: "1 поколение (V10)"
-        }
+        id: 1, year: 1982, name: "1 поколение (V10)"
     },
     {
-        id: 2,
-        discription: {
-            year: 1986, name: "2 поколение (V20)"
-        }
+        id: 2, year: 1986, name: "2 поколение (V20)"
     },
     {
-        id: 3,
-        discription: {
-            year: 1990, name: "3 поколение (V30, XV10)"
-        }
+        id: 3, year: 1990, name: "3 поколение (V30, XV10)"
     },
     {
-        id: 4,
-        discription: {
-            year: 1994, name: "4 поколение (V40, XV20)"
-        }
+        id: 4, year: 1994, name: "4 поколение (V40, XV20)"
     },
     {
-        id: 5,
-        discription: {
-            year: 2001, name: "5 поколение (XV30)"
-        }
+        id: 5, year: 2001, name: "5 поколение (XV30)"
     },
     {
-        id: 6,
-        discription: {
-            year: 2006, name: "6 поколение (XV40)"
-        }
+        id: 6, year: 2006, name: "6 поколение (XV40)"
     },
     {
-        id: 7,
-        discription: {
-            year: 2011, name: "7 поколение"
-        }
+        id: 7, year: 2011, name: "7 поколение"
     },
     {
-        id: 8,
-        discription: {
-            year: 2017, name: "8 поколение"
-        }
-    }
+        id: 8, year: 2017, name: "8 поколение"
+    },
 ];
+class ToyotaCamry extends Component {
+    //data = ArrTask4;
+    constructor(props) {
+        super(props);
+        this.state = {
+            idRunning: "asc",
+            yearRunning: "asc",
+            nameRunning: "asc",
+            data: ArrTask4,
+            idInput: "",
+            yearInput: "",
+            textInput: "",
+        };
+    }
+
+    sortByClick = (sortByName = false) => {
+        const { data } = this.state;
+        if (sortByName) {
+            return this.setState({ data: this.sortByName([...data], "name") });
+        }
+        return this.setState({ data: data.sort(this.sortByYear) });
+    };
+
+    sortById = (a, b) => {
+        const { idRunning } = this.state;
+        let result = 0;
+        if (a.id < b.id) {
+            result = idRunning === "asc" ? -1 : 1;
+        }
+        if (a.year > b.year) {
+            result = idRunning === "asc" ? 1 : -1;
+        }
+        this.setState({ idRunning: idRunning === "asc" ? "desc" : "asc" });
+        return result;
+    };
+
+    sortByYear = (a, b) => {
+        const { yearRunning } = this.state;
+        let result = 0;
+        if (a.year < b.year) {
+            result = yearRunning === "asc" ? -1 : 1;
+        }
+        if (a.year > b.year) {
+            result = yearRunning === "asc" ? 1 : -1;
+        }
+        this.setState({ yearRunning: yearRunning === "asc" ? "desc" : "asc" });
+        return result;
+    };
+
+    sortByName = (array, field) => {
+        const { nameRunning } = this.state;
+        const n = array.length;
+        for (let i = 0; i < n - 1; i++) {
+            let min = i;
+            for (let j = i + 1; j < n; j++) {
+                if (nameRunning === "asc" && array[j][field] < array[min][field]) {
+                    min = j;
+                }
+                if (nameRunning === "desc" && array[j][field] > array[min][field]) {
+                    min = j;
+                }
+            }
+            let tmp = array[min];
+            array[min] = array[i];
+            array[i] = tmp;
+        }
+        this.setState({ nameRunning: nameRunning === "asc" ? "desc" : "asc" });
+        return array;
+    };
+
+    addRow = () => {
+        this.setState({ data: [...this.state.data, { id: 9, year: "2021", name: "9 поколение" }] })
+    }
+
+    addByClick = () => {
+        const { idInput, yearInput, textInput, data } = this.state;
+        if (idInput.length < 10 || yearInput.length !== 9 || textInput.length < 10) {
+            return false;
+        }
+        this.setState({ idInput: "", yearInput: "", textInput: "", data: [...data, { id: idInput, year: yearInput, name: textInput }] });
+    };
+
+    removeById = (id) => {
+        const { data } = this.state;
+        this.setState({ data: data.filter((item) => item.id !== id) })
+    }
+    removeLastInArray = () => {
+        const { data } = this.state;
+        this.setState({ data: data.slice(0, -1) })
+    };
+    handleInputChange = (e, field) => {
+        this.setState({ [field]: e.target.value });
+    }
+
+    render() {
+        const { idInput, yearInput, textInput } = this.state;
+        console.log("state", this.state);
+        return (
+            <div>
+                <table className="Table">
+                    <thead>
+                        <tr>
+                            <th>
+                                <button type="button" onClick={() => this.sortByClick(true)}>
+                                    № п/п
+                            </button>
+                            </th>
+                            <th>
+                                <button type="button" onClick={() => this.sortByClick(true)}>
+                                    Год
+                            </button>
+                            </th>
+                            <th>
+                                <button type="button" onClick={() => this.sortByClick(true)}>
+                                    Поколение
+                            </button>
+                            </th>
+                            <th>
+                                <button type="button" onClick={() => this.sortByClick(true)}>
+                                    Кнопка
+                            </button>
+                            </th>
+                            <th></th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        {this.state.data.map((item) => (
+                            <tr key={item.id}>
+                                <td>{item.id}</td>
+                                <td>{item.year}</td>
+                                <td>{item.name}</td>
+                                <td onClick={() => this.removeById(item.id)}>-</td>
+                            </tr>
+                        ))}
+                    </tbody>
+                    <button type="button" onClick={this.addRow}>
+                        Добавить
+                    </button>
+                    <input type="text" value={idInput} onChange={(e) => this.handleInputChange(e, "idInput")} />
+                    <input type="text" value={yearInput} onChange={(e) => this.handleInputChange(e, "yearInput")} />
+                    <input type="text" value={textInput} onChange={(e) => this.handleInputChange(e, "textInput")} />
+                    <button type="button" onClick={this.removeLastInArray} >
+                        Удалить
+                    </button>
+                </table>
+            </div>
+        );
+    }
+}
+
 const Task4 = () => {
 
     console.log(ArrTask4);
-    const AddArrTask4 = { ...ArrTask4 };
-    console.log(AddArrTask4);
+    //const AddArrTask4 = {...ArrTask4};
+    //console.log(AddArrTask4);
     const AddNewArrTask4 = { ...ArrTask4, id: 9, year: 2021, name: "9 поколение" };
     console.log(AddNewArrTask4);
 
-    let ListItem = ArrTask4.map((item) => <tr key={item.id}>
-        <td>{item.id}</td>
-        <td>{item.discription.year}</td>
-        <td>{item.discription.name}</td>
-    </tr>)
-
     return (
-        <div>
+        <div className="Table">
             <h3>Задание № 4</h3>
             <h2>Тойота Камри </h2>
-            <table className="Table">
-
-                <tbody>
-                    {ListItem}
-                </tbody>
-
-            </table>
-            <input type="text" />
-            <button>Add</button>
-            <input type="text" />
-            <button>Remove</button>
+            <ToyotaCamry />
         </div>
     );
-}
-
-
+};
 
 export default Task4;
+
+
