@@ -46,7 +46,7 @@ const ProductTable = (props) => {
     };
     return (
         <div>
-            <table>
+            <table className="table1">
                 <caption>Продукты</caption>
                 <thead>
                     <tr>
@@ -79,7 +79,7 @@ const ProductTable = (props) => {
                         </th>
                     </tr>
                 </thead>
-                <tbody>
+                <tbody >
                     {items.map((item) => (
                         <tr key={item.id}>
                             <td>{item.name}</td>
@@ -95,7 +95,7 @@ const ProductTable = (props) => {
 
 export default function Table() {
     return (
-        <div className="Table">
+        <div >
             <ProductTable
                 products={[
                     { id: 1, name: 'Хлеб пшеничный', price: 13, stock: 3 },

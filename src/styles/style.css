@@ -1,9 +1,10 @@
-body {
+/* body {
     background: #CFFBF5;
     color: #0E025E;
     font-family: 'Roboto', sans-serif;
     font-size: 12px;
-}
+    width: 100%;
+} */
 
 h1 {
     font-size: 60px;
@@ -34,11 +35,10 @@ p {
 }
 
 #wrapper {
-    width: 95%; /*900px;*/
+    width: 100%; 
     outline: 1px solid #280353;
     padding: 10px;
-    margin: 0 auto;/*60px auto;*/
-    /*height: 1024px; */
+    margin: 0 auto;
 }
 
 #header {
@@ -60,12 +60,12 @@ p {
     align-items: center; /* Выравниваем элементы вертикально по центру. */      
 }
 
-#content {
-	/*margin-top: 150px;*/
+/* #content {
+	
     background-image: url(../images/6.jpg);
-    width: 100%; /*900px;*/
-    height: 100%; /*624px;*/
-}
+    width: 100%; 
+    height: 100%; 
+} */
 
 #menu {
 	/*line-height: 1.5;*/

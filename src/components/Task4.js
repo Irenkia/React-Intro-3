@@ -128,7 +128,7 @@ class ToyotaCamry extends Component {
         console.log("state", this.state);
         return (
             <div>
-                <table className="Table">
+                <table className="table4">
                     <thead>
                         <tr>
                             <th>

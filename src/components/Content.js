@@ -5,6 +5,7 @@ import Question from './Question';
 import Table from './Table';
 import Task3 from './Task3';
 import Task4 from './Task4';
+import Task5 from './Task5';
 //import Example from './Example';
 function Content() {
     const topicTitle = 'Обсуждаемый материал:';
@@ -30,8 +31,9 @@ function Content() {
                 <h3><a href="сontent/css-1.html" target="_blank" rel="noreferrer">{number_6}{readTopic}</a></h3>
             </div> */}
             <Table />
-            <Task3 />
+            {/* <Task3 /> */}
             <Task4 />
+            {/* <Task5 /> */}
         </div>
 
     );
