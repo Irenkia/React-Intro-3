@@ -115,10 +115,10 @@ const Task3 = () => {
     console.log(d);
     console.log(s);
     console.log(
-        [3, 9, 1, 7, 2, 8, 4].sort()
+        [3, 9, 1, 7, 22, 8, 4].sort()
     );
     console.log(
-        [3, 9, 1, 7, 2, 8, 4].sort((a, b) => a - b)
+        [3, 9, 1, 7, 22, 8, 4].sort((a, b) => a - b)
     );
 
     return (

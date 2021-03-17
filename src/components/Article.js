@@ -6,15 +6,12 @@ import Navigation from './Navigation';
 
 function Article() {
   return (
-
     <div className="wrapper">
       <Header />
       <Navigation />
       <Content />
       <Footer />
-
     </div>
-
   )
 }
 

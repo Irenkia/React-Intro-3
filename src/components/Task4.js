@@ -81,9 +81,9 @@ class ToyotaCamry extends Component {
     sortByName = (array, field) => {
         const { nameRunning } = this.state;
         const n = array.length;
-        for (let i = 0; i < n - 1; i++) {
-            let min = i;
-            for (let j = i + 1; j < n; j++) {
+        for (var i = 0; i < n - 1; i++) {
+            var min = i;
+            for (var j = i + 1; j < n; j++) {
                 if (nameRunning === "asc" && array[j][field] < array[min][field]) {
                     min = j;
                 }
@@ -91,7 +91,7 @@ class ToyotaCamry extends Component {
                     min = j;
                 }
             }
-            let tmp = array[min];
+            var tmp = array[min];
             array[min] = array[i];
             array[i] = tmp;
         }
@@ -182,8 +182,36 @@ class ToyotaCamry extends Component {
 const Task4 = () => {
 
     console.log(ArrTask4);
-    //const AddArrTask4 = {...ArrTask4};
-    //console.log(AddArrTask4);
+    console.log(Object.keys(ArrTask4));
+
+    var obj_1 = { 10: 'a', 5: 'b', 7: 'c' };
+    console.log(Object.keys(obj_1));
+
+    var clone = Object.assign({}, obj_1);
+    var obj_2 = {
+        a: 1,
+        b: {
+            c: 2,
+        },
+    };
+    //Пример: слияние объектов
+    var newObj = Object.assign(clone, obj_2);
+    console.log(clone); // изменился и сам целевой объект.
+    console.log(newObj);
+
+    //Пример: наследуемые и неперечисляемые свойства не копируются
+    var obj_3 = Object.create({ foo: 1 }, { // foo является унаследованным свойством.
+        bar: {
+            value: 2  // bar является неперечисляемым свойством.
+        },
+        baz: {
+            value: 3,
+            enumerable: true  // baz является собственным перечисляемым свойством.
+        }
+    });
+    var copy = Object.assign({}, obj_3);
+    console.log(copy); // { baz: 3 }
+
     const AddNewArrTask4 = { ...ArrTask4, id: 9, year: 2021, name: "9 поколение" };
     console.log(AddNewArrTask4);
 

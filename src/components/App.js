@@ -7,7 +7,6 @@ function App() {
         <div className="wrapper">
             <Article />
         </div>
-
     );
 }
 
