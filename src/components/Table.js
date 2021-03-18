@@ -46,6 +46,7 @@ const ProductTable = (props) => {
     };
     return (
         <div>
+            <h3>Задание № 2</h3>
             <table className="table1">
                 <caption>Продукты</caption>
                 <thead>

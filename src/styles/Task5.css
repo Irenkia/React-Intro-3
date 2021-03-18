@@ -1,0 +1,30 @@
+body{
+    margin: 0;
+}
+.modelCar {
+    width: 100%;
+    border-collapse: collapse;
+    text-align: center;
+    
+}
+
+.modelCar th{
+    padding: 10px;
+    color: #fff;
+    background-color: #96ceb4;
+    border: none;
+}
+
+.car-btn{
+    padding: 3px;
+    border: none;
+    border-radius: 5px;
+    font-size: 12px;
+    color: #fff;
+    background-color: #96a6ee;
+}
+
+.car-btn:hover{
+    cursor: pointer;
+    filter: brightness(1.2);
+}

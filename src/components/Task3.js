@@ -125,6 +125,7 @@ const Task3 = () => {
         <div className="Table">
             <h3>Задание № 3</h3>
             <h2>Тойота Камри </h2>
+            {/* <h2>Тойота Камри </h2> */}
             <TableToyota />
         </div>
     );

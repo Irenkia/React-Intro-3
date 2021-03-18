@@ -31,9 +31,9 @@ function Content() {
                 <h3><a href="сontent/css-1.html" target="_blank" rel="noreferrer">{number_6}{readTopic}</a></h3>
             </div> */}
             <Table />
-            {/* <Task3 /> */}
+            <Task3 />
             <Task4 />
-            {/* <Task5 /> */}
+            <Task5 />
         </div>
 
     );
