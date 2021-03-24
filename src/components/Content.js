@@ -2,11 +2,12 @@ import React from 'react';
 import '../styles/Content.css'
 import PropTypes from 'prop-types'
 import Question from './Question';
-import Table from './Table';
-import Task3 from './Task3';
-import Task4 from './Task4';
-import Task5 from './Task5';
-//import Example from './Example';
+//import Table from './Table';
+//import Task3 from './Task3';
+//import Task4 from './Task4';
+//import Task5 from './Task5';
+import Task6 from './Task6';
+import MemeGenerator from './Task6_1';
 function Content() {
     const topicTitle = 'Обсуждаемый материал:';
     // const number_1 = 1;
@@ -30,10 +31,12 @@ function Content() {
                 <h3><a href="сontent/html-1.html" target="_blank" rel="noreferrer">{number_5}{readTopic}</a></h3>
                 <h3><a href="сontent/css-1.html" target="_blank" rel="noreferrer">{number_6}{readTopic}</a></h3>
             </div> */}
-            <Table />
-            <Task3 />
-            <Task4 />
-            <Task5 />
+            {/* <Table /> */}
+            {/* <Task3 /> */}
+            {/* <Task4 /> */}
+            {/* <Task5 /> */}
+            <Task6 />
+            <MemeGenerator />
         </div>
 
     );
