@@ -2,12 +2,12 @@ import React from 'react';
 import '../styles/Content.css'
 import PropTypes from 'prop-types'
 import Question from './Question';
-//import Table from './Table';
-//import Task3 from './Task3';
-//import Task4 from './Task4';
-//import Task5 from './Task5';
-import Task6 from './Task6';
-import MemeGenerator from './Task6_1';
+//import Table from '../tasks/Table';
+//import Task3 from '../tasks/Task3';
+//import Task4 from '../tasks/Task4';
+//import Task5 from '../tasks/Task5';
+import Task6 from '../tasks/Task6';
+import MemeGenerator from '../tasks/Task6_1';
 function Content() {
     const topicTitle = 'Обсуждаемый материал:';
     // const number_1 = 1;

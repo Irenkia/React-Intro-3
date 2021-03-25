@@ -1,6 +1,4 @@
 import React, { Component } from 'react';
-// import React, { useState } from 'react';
-// import { runSelectionSort } from "./RunSort";
 import '../styles/Task6_1.css';
 
 class MemeGenerator extends Component {
@@ -42,10 +40,10 @@ class MemeGenerator extends Component {
         return (
             <div>
                 <h3>Задание № 6_1</h3>
-                <h1>MEME GENERATOR SECTION</h1>
+                <h2>MEME GENERATOR SECTION</h2>
                 <div className="picture">
                     <img src="http://www.pngall.com/wp-content/uploads/2016/05/Trollface.png" alt="Problem?" />
-                    <p>Meme Generator</p>
+                    <p>Meme Generator  </p>
                 </div>
 
                 <form className="meme-form" onSubmit={this.handleSubmit}>
