@@ -1,4 +1,3 @@
-//import React, { Component } from 'react';
 import React, { useState } from 'react';
 import { runSelectionSort } from "./RunSort";
 import '../styles/Task5.css';
@@ -91,7 +90,6 @@ const Task5 = () => {
         setUpName(!upName);
         setSortCriteria("name");
     };
-    //console.log(task5);
 
     const handleUseSortCheck = (name) => {
         setUseSort(name.target.checked);
@@ -109,9 +107,7 @@ const Task5 = () => {
         setTask5(updatedTask5);
         setYearInput("");
         setNameInput("");
-        //event.target.show();
     };
-    //console.log(task5);
 
     const removeLastNameFromTask5 = (task5) => task5.slice(0, -1);
     const handleLastNameRemove = () => {
@@ -122,12 +118,10 @@ const Task5 = () => {
 
         setTask5(task5.slice(0, -1));
     };
-    //console.log(task5);
 
     const DeleteById = (idCar) => {
         setTask5(task5.filter((item) => item.id !== idCar));
     }
-    //console.log(task5);
 
     return (
         <div>
