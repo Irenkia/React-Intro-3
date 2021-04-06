@@ -10,7 +10,7 @@ body{
 
 .modelCar th{
     padding: 10px;
-    color: #fff;
+    color: rgb(29, 23, 23);
     background-color: #96ceb4;
     border: none;
 }
@@ -20,7 +20,7 @@ body{
     border: none;
     border-radius: 5px;
     font-size: 12px;
-    color: #fff;
+    color: rgb(26, 11, 11);
     background-color: #96a6ee;
 }
 
@@ -28,3 +28,7 @@ body{
     cursor: pointer;
     filter: brightness(1.2);
 }
+
+/* .tabClassName {
+
+} */

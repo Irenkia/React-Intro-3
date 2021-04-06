@@ -7,7 +7,7 @@ class MyBooks extends Component {
     constructor() {
         super();
         this.state = {
-            error: null,
+            errorMessage: null,
             isLoaded: false,
             allBooks: []
         }
@@ -22,7 +22,8 @@ class MyBooks extends Component {
                 console.log({ allBooks: response })
             },
                 (error) => {
-                    this.setState({ isLoaded: true, error })
+                    this.setState({ isLoaded: true, errorMessage: error })
+                    console.log(this.state.errorMessage);
                 }
                 //error => console.log(error)
             );
@@ -36,9 +37,9 @@ class MyBooks extends Component {
     }
 
     render() {
-        const { error, isLoaded } = this.state;
-        if (error) {
-            return <p>Error {error.message}</p>
+        const { errorMessage, isLoaded } = this.state;
+        if (errorMessage) {
+            return <p>Error {errorMessage.message}</p>
         }
         else if (!isLoaded) {
             return <p>Loading...</p>
