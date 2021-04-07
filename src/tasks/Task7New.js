@@ -1,7 +1,6 @@
 //import React, { Component } from 'react';
 import React, { useState } from 'react';
 import '../styles/Task7New.css';
-//const Component = React.Component;
 
 const tabItems = [
     {
@@ -22,12 +21,6 @@ const tabItems = [
     {
         id: 6, year: 2006, name: "6 поколение (XV40)"
     },
-    // {
-    //     id: 7, year: 2011, name: "7 поколение"
-    // },
-    // {
-    //     id: 8, year: 2017, name: "8 поколение"
-    // },
 ];
 
 const Task7New = () => {

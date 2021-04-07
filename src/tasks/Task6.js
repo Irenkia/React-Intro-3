@@ -39,10 +39,10 @@ class MyBooks extends Component {
     render() {
         const { errorMessage, isLoaded } = this.state;
         if (errorMessage) {
-            return <p>Error {errorMessage.message}</p>
+            return <p>Ошибка: {errorMessage.message}</p>
         }
         else if (!isLoaded) {
-            return <p>Loading...</p>
+            return <p>Загрузка...</p>
         }
         else {
             return (

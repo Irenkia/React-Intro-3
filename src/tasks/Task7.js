@@ -23,12 +23,6 @@ const ArrTask7 = [
     {
         id: 6, year: 2006, name: "6 поколение (XV40)", active: false
     },
-    // {
-    //     id: 7, year: 2011, name: "7 поколение", active: false
-    // },
-    // {
-    //     id: 8, year: 2017, name: "8 поколение", active: false
-    // },
 ];
 
 const asc = "asc"
@@ -102,7 +96,7 @@ class ToyotaCamryTable extends Component {
     sortByClick = (sortByName = false) => {
         const { data } = this.state;
         if (sortByName) {
-            return this.setState({ data: this.sortByName([...data], "Поколение") });
+            return this.setState({ data: this.sortByName([...data], "name") });
         }
         return this.setState({ data: data.sort(this.sortByYear) });
     };
@@ -135,7 +129,6 @@ class ToyotaCamryTable extends Component {
     };
 
     render() {
-        //const activeStyle = { color: '#ff3333' };
 
         const { idInput, yearInput, nameInput } = this.state;
         //console.log("state", this.state);
@@ -173,7 +166,7 @@ class ToyotaCamryTable extends Component {
                 <input type="text" placeholder="Год" value={yearInput} onChange={(e) => this.handleInputChange(e, "yearInput")} />
                 <input type="text" placeholder="Поколение" value={nameInput} onChange={(e) => this.handleInputChange(e, "nameInput")} />
 
-                <button onClick={this.addByClick}>Добавить</button>
+                <button onClick={this.addRow}>Добавить</button>
                 <button onClick={this.removeLastInArray}>Удалить</button>
             </div>
         );

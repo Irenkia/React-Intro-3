@@ -10,6 +10,8 @@ import Question from './Question';
 //import MemeGenerator from '../tasks/Task6_1';
 import Task7 from '../tasks/Task7';
 import Task7New from '../tasks/Task7New';
+import DragDrop from '../tasks/DragDrop';
+
 function Content() {
     const topicTitle = 'Обсуждаемый материал:';
     // const number_1 = 1;
@@ -41,6 +43,7 @@ function Content() {
             {/* <MemeGenerator /> */}
             <Task7 />
             <Task7New />
+            <DragDrop />
         </div>
 
     );

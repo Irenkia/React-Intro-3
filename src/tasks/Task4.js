@@ -29,7 +29,6 @@ const ArrTask4 = [
     },
 ];
 class ToyotaCamry extends Component {
-    //data = ArrTask4;
     constructor(props) {
         super(props);
         this.state = {
