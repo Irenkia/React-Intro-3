@@ -1,7 +1,7 @@
 import React, { Component } from 'react';
 import '../styles/Task6_1.css';
 
-class MemeGenerator extends Component {
+class MemeGenerator6 extends Component {
     constructor() {
         super()
         this.state = {
@@ -73,4 +73,4 @@ class MemeGenerator extends Component {
     }
 }
 
-export default MemeGenerator
+export default MemeGenerator6;

@@ -1,7 +1,7 @@
 import React, { useState, useRef } from 'react';
 import '../styles/DragDrop.css';
 
-const DragDrop = () => {
+const DragDrop7 = () => {
 
     const draggingItem = useRef();
     const dragOverItem = useRef();
@@ -67,4 +67,5 @@ const DragDrop = () => {
     );
 }
 
-export default DragDrop;
+export default DragDrop7;
+

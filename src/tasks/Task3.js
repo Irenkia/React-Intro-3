@@ -15,8 +15,8 @@ class TableToyota extends Component {
     data = ToyotaCamry;
     constructor(props) {
         super(props);
-        this.sortByClick = this.sortByClick.bind(this);
         this.state = { sorted: true };
+        this.sortByClick = this.sortByClick.bind(this);
     }
 
     sortByClick = () => {
@@ -52,14 +52,10 @@ class TableToyota extends Component {
                     <thead>
                         <tr>
                             <th>
-                                <button type="button" onClick={this.sortByClick}>
-                                    Год
-                    </button>
+                                <button type="button" onClick={this.sortByClick}>Год</button>
                             </th>
                             <th>
-                                <button type="button" onClick={this.sortByClick}>
-                                    Поколение
-                    </button>
+                                <button type="button" onClick={this.sortByClick}> Поколение</button>
                             </th>
                         </tr>
                     </thead>
@@ -73,12 +69,8 @@ class TableToyota extends Component {
                         ))}
                     </tbody>
                 </table>
-                <button type="button" onClick={this.addByClick}>
-                    Добавить
-            </button>
-                <button type="button" onClick={this.removeByClick}>
-                    Удалить
-            </button>
+                <button type="button" onClick={this.addByClick}> Добавить</button>
+                <button type="button" onClick={this.removeByClick}>Удалить</button>
             </div>
         );
     }
