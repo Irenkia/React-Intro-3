@@ -92,14 +92,10 @@ const Task5 = () => {
         setSortCriteria("name");
     };
 
-    const handleUseSortCheck = (name) => {
-        setUseSort(name.target.checked);
-    };
-
     const addNameToTask5 = (task5, name) => [...task5, name];
     const handleaddNameToTask5 = (event) => {
         event.preventDefault();
-        const newName = { year: +yearInput, name: +nameInput };
+        const newName = { year: +yearInput, name: nameInput };
 
         const updatedTask5 = addNameToTask5(task5, newName);
 
@@ -128,8 +124,6 @@ const Task5 = () => {
         <div>
             <h3>Задание № 5</h3>
             <h2>Тойота Камри </h2>
-            {/* <input type="checkbox" id="heap-search" name="heapSearch" onChange={handleUseSortCheck} /> */}
-            handleUseSortCheck={handleUseSortCheck};
             <table className="modelCar">
                 <thead>
                     <tr >
@@ -149,12 +143,10 @@ const Task5 = () => {
                 </tbody>
             </table>
             <div>
-                <button type="button" onClick={handleaddNameToTask5}>Добавить</button>
-                <button type="button" onClick={handleLastNameRemove}>Удалить</button>
+                <button onClick={handleaddNameToTask5}>Добавить</button>
+                <button onClick={handleLastNameRemove}>Удалить</button>
             </div>
         </div>
     );
 }
 export default Task5;
-
-

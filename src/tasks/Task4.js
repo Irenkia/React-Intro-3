@@ -98,7 +98,7 @@ class ToyotaCamry extends Component {
     };
 
     addRow = () => {
-        this.setState({ data: [...this.state.data, { id: 9, year: "2021", name: "9 поколение" }] })
+        this.setState({ data: [...this.state.data, { id: this.state.idInput, year: this.state.yearInput, name: this.state.yearInput }] })
     }
 
     addByClick = () => {
@@ -158,20 +158,16 @@ class ToyotaCamry extends Component {
                                 <td>{item.id}</td>
                                 <td>{item.year}</td>
                                 <td>{item.name}</td>
-                                <td onClick={() => this.removeById(item.id)}>-</td>
+                                <td onClick={() => this.removeById(item.id)}>удалить</td>
                             </tr>
                         ))}
                     </tbody>
-                    <button type="button" onClick={this.addRow}>
-                        Добавить
-                    </button>
-                    <input type="text" value={idInput} onChange={(e) => this.handleInputChange(e, "idInput")} />
-                    <input type="text" value={yearInput} onChange={(e) => this.handleInputChange(e, "yearInput")} />
-                    <input type="text" value={textInput} onChange={(e) => this.handleInputChange(e, "textInput")} />
-                    <button type="button" onClick={this.removeLastInArray} >
-                        Удалить
-                    </button>
                 </table>
+                <button type="button" onClick={this.addRow}>Добавить</button>
+                <input type="text" value={idInput} onChange={(e) => this.handleInputChange(e, "idInput")} />
+                <input type="text" value={yearInput} onChange={(e) => this.handleInputChange(e, "yearInput")} />
+                <input type="text" value={textInput} onChange={(e) => this.handleInputChange(e, "textInput")} />
+                <button type="button" onClick={this.removeLastInArray} >Удалить</button>
             </div>
         );
     }

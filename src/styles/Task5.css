@@ -29,6 +29,9 @@ body{
     filter: brightness(1.2);
 }
 
+.cursor {
+    cursor: pointer;
+}
 /* .tabClassName {
 
 } */

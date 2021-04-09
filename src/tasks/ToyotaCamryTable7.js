@@ -30,11 +30,11 @@ class ToyotaCamryTable7 extends Component {
         const { idWay } = this.state;
         let result = 0;
         if (a.id < b.id) {
-            result = idWay === asc ? -1 : 1;
-        }
-        if (a.id > b.id) {
             result = idWay === asc ? 1 : -1;
         }
+        // else if (a.id > b.id) {
+        //     result = idWay === asc ? 1 : -1;
+        // }
         this.setState({ idWay: idWay === asc ? desc : asc });
         return result;
     };
@@ -73,7 +73,7 @@ class ToyotaCamryTable7 extends Component {
         return array;
     };
 
-    sortByClick = (sortByName = false) => {
+    sortByClick = (sortByName) => {
         const { data } = this.state;
         if (sortByName) {
             return this.setState({ data: this.sortByName([...data], "name") });
@@ -82,7 +82,8 @@ class ToyotaCamryTable7 extends Component {
     };
 
     addRow = () => {
-        this.setState({ data: [...this.state.data, { id: "№ п/п", year: "Год", name: "Поколение" }] })
+        this.setState({ data: [...this.state.data, { id: this.state.idInput, year: this.state.yearInput, name: this.state.nameInput }] })
+        this.setState({ idInput: "", yearInput: "", nameInput: "" })
     }
 
     addByClick = () => {
@@ -118,13 +119,13 @@ class ToyotaCamryTable7 extends Component {
                     <thead>
                         <tr >
                             <th>
-                                <button onClick={() => this.sortByClick}>№ п/п</button>
+                                <button className="cursor" onClick={() => this.sortByClick(this.state.idWay)}>№ п/п</button>
                             </th>
                             <th>
-                                <button onClick={() => this.sortByClick}>Год</button>
+                                <button className="cursor" onClick={() => this.sortByClick(this.state.yearWay)}>Год</button>
                             </th>
                             <th>
-                                <button onClick={() => this.sortByClick}>Поколение</button>
+                                <button className="cursor" onClick={() => this.sortByClick(this.state.nameWay)}>Поколение</button>
                             </th>
                             <th>
                                 <button onClick={() => this.sortByClick}>Удалить</button>
@@ -137,7 +138,7 @@ class ToyotaCamryTable7 extends Component {
                                 <td>{item.id}</td>
                                 <td>{item.year}</td>
                                 <td>{item.name}</td>
-                                <td onClick={() => this.removeById(item.id)}>-</td>
+                                <td className="cursor" onClick={() => this.removeById(item.id)}>удалить</td>
                             </tr>
                         ))}
                     </tbody>

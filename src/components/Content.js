@@ -6,13 +6,8 @@ import Question from './Question';
 //import Task3 from '../tasks/Task3';
 //import Task4 from '../tasks/Task4';
 //import Task5 from '../tasks/Task5';
-import Task6 from '../tasks/Task6';
-// import MemeGenerator from '../tasks/Task6_1';
+//import Task6 from '../tasks/Task6';
 import Task7 from '../tasks/Task7';
-//import Task7New from '../tasks/Task7New';
-//import Tab from '../tasks/Task7/Tab';
-//import DragDrop from '../tasks/DragDrop';
-
 function Content() {
     const topicTitle = 'Обсуждаемый материал:';
     // const number_1 = 1;
