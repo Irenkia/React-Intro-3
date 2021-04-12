@@ -1,5 +1,5 @@
 import React, { useState, useRef } from 'react';
-import '../styles/DragDrop.css';
+import './css7/DragDrop7.css';
 
 const DragDrop7 = () => {
 

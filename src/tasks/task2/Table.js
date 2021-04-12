@@ -1,5 +1,5 @@
 import React, { useState, useMemo } from 'react';
-import '../styles/Table.css';
+import '../taskCSS/Table.css';
 //import ProductTable from './ProductTable'; 
 
 const UseSortableData = (items, config = null) => {

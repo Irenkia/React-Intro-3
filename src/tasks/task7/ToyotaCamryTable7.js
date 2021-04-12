@@ -2,8 +2,8 @@ import React, { Component } from 'react';
 import TabItems7 from './TabItems7';
 //import React, { useState } from 'react';
 //import { runSelectionSort } from "./RunSort";
-import '../styles/Task5.css';
-import '../styles/Table.css';
+import '../taskCSS/Table.css'
+import '../task5/css5/Task5.css';
 
 const asc = "asc"
 const desc = "desc"

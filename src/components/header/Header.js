@@ -1,7 +1,7 @@
 import React from 'react';
-import logo16 from '../images/react-16.png';
-import logo2 from '../images/react-2.png';
-import '../styles/Header.css'
+import logo16 from '../../assets/images/react-16.png';
+import logo2 from '../../assets/images/react-2.png';
+import './headerCSS/Header.css'
 import PropTypes from 'prop-types'
 
 const Header = () => {

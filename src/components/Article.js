@@ -1,8 +1,8 @@
 import React from 'react';
-import Content from './Content';
-import Footer from './Footer';
-import Header from './Header';
-import Navigation from './Navigation';
+import Content from './content/Content';
+import Footer from './footer/Footer';
+import Header from './header/Header';
+import Navigation from './navigation/Navigation';
 
 function Article() {
   return (

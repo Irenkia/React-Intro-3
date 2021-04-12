@@ -1,7 +1,7 @@
 import React from 'react';
-import logo12 from '../images/react-12.png';
-import logo14 from '../images/react-14.jpg';
-import '../styles/Navigation.css'
+import logo12 from '../../assets/images/react-12.png';
+import logo14 from '../../assets/images/react-14.jpg';
+import './navigationCSS/Navigation.css'
 import PropTypes from 'prop-types'
 
 function Navigation() {

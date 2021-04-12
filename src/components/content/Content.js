@@ -1,13 +1,14 @@
 import React from 'react';
-import '../styles/Content.css'
-import PropTypes from 'prop-types'
-import Question from './Question';
-//import Table from '../tasks/Table';
-//import Task3 from '../tasks/Task3';
-//import Task4 from '../tasks/Task4';
-//import Task5 from '../tasks/Task5';
-//import Task6 from '../tasks/Task6';
-import Task7 from '../tasks/Task7';
+import './contentCSS/Content.css';
+import PropTypes from 'prop-types';
+import Question from './Question.js';
+//import Table from '../../tasks/task2/Table.js';
+//import Task3 from '../../tasks/task3/Task3.js';
+//import Task4 from '../../tasks/task4/Task4.js';
+//import Task5 from '../../tasks/task5/Task5.js';
+//import Task6 from '../../tasks/task6/Task6.js';
+import Task7 from '../../tasks/task7/Task7.js';
+
 function Content() {
     const topicTitle = 'Обсуждаемый материал:';
     // const number_1 = 1;

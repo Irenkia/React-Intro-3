@@ -1,5 +1,5 @@
 import React, { Component } from 'react';
-import '../styles/Task6_1.css';
+import './css6/Task6_1.css';
 
 class MemeGenerator6 extends Component {
     constructor() {

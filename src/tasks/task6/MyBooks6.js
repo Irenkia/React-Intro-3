@@ -1,5 +1,5 @@
 import React, { Component } from 'react';
-import '../styles/Task6.css';
+import './css6/Task6.css';
 
 const apiURL = "https://www.anapioficeandfire.com/api/books?pageSize=30";
 

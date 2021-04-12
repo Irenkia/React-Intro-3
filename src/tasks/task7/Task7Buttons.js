@@ -1,6 +1,6 @@
 import React, { useState } from 'react';
 import TabItems7 from './TabItems7';
-import '../styles/Task7New.css';
+import './css7/Task7Buttons.css';
 
 const Task7Buttons = () => {
     const [active, setActive] = useState(0);

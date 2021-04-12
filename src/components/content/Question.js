@@ -1,13 +1,14 @@
 
 import React from 'react';
-import logo1v from '../images/version-control-system.png';
-import logo1g from '../images/git-4.jpg';
-import logo1n from '../images/node.js-1.jpg';
-import logo1npm from '../images/npm-2.png';
-import logo1h from '../images/html-1.png';
-import logo1c from '../images/css-1.png';
-import '../styles/Question.css'
-import PropTypes from 'prop-types'
+import logo1v from '../../assets/images/version-control-system.png';
+import logo1g from '../../assets/images/git-4.jpg';
+import logo1n from '../../assets/images/node.js-1.jpg';
+import logo1npm from '../../assets/images/npm-2.png';
+import logo1h from '../../assets/images/html-1.png';
+import logo1c from '../../assets/images/css-1.png';
+import './Content.js';
+import './contentCSS/Question.css';
+import PropTypes from 'prop-types';
 
 const Question = (props) => {
     const number_1 = 1;

@@ -1,7 +1,7 @@
 import React, { useState } from 'react';
 import { runSelectionSort } from "./RunSort";
-import '../styles/Task5.css';
-import '../styles/Table.css';
+import './css5/Task5.css';
+import '../taskCSS/Table.css';
 
 const ArrTask5 = [
     {

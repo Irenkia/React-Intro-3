@@ -1,5 +1,5 @@
 import React, { Component } from 'react';
-import '../styles/Table.css';
+import '../taskCSS/Table.css';
 
 const ToyotaCamry = [
     [1982, "1 поколение (V10)"],

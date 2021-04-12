@@ -1,7 +1,7 @@
 import React from 'react';
 import MyBooks6 from './MyBooks6';
 import MemeGenerator6 from './MemeGenerator6';
-import '../styles/Task6.css';
+import './css6/Task6.css';
 
 const Task6 = () => {
 
