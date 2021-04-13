@@ -8,7 +8,7 @@ import Question from './Question.js';
 //import Task5 from '../../tasks/task5/Task5.js';
 //import Task6 from '../../tasks/task6/Task6.js';
 import Task7 from '../../tasks/task7/Task7.js';
-
+import Task9 from '../../tasks/task9/Task9.js';
 function Content() {
     const topicTitle = 'Обсуждаемый материал:';
     // const number_1 = 1;
@@ -38,6 +38,7 @@ function Content() {
             {/* <Task5 /> */}
             {/* <Task6 /> */}
             <Task7 />
+            <Task9 />
         </div>
 
     );
