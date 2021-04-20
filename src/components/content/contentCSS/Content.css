@@ -22,4 +22,11 @@
     /*white-space: pre; /*как сделать пробел между строк*/
 }
 
+.content-light {
+    background-color: #fff;
+}
+
+.content-dark {
+    background-color: #222;
+}
 

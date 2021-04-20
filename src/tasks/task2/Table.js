@@ -1,7 +1,8 @@
 import React, { useState, useMemo } from 'react';
 import '../taskCSS/Table.css';
-//import ProductTable from './ProductTable'; 
 
+const asc = "asc"
+const desc = "desc"
 const UseSortableData = (items, config = null) => {
     const [sortConfig, setSortConfig] = useState(config);
 
@@ -10,10 +11,10 @@ const UseSortableData = (items, config = null) => {
         if (sortConfig !== null) {
             sortableItems.sort((a, b) => {
                 if (a[sortConfig.key] < b[sortConfig.key]) {
-                    return sortConfig.direction === 'ascending' ? -1 : 1;
+                    return sortConfig.direction === asc ? -1 : 1;
                 }
                 if (a[sortConfig.key] > b[sortConfig.key]) {
-                    return sortConfig.direction === 'ascending' ? 1 : -1;
+                    return sortConfig.direction === asc ? 1 : -1;
                 }
                 return 0;
             });
@@ -22,13 +23,13 @@ const UseSortableData = (items, config = null) => {
     }, [items, sortConfig]);
 
     const requestSort = (key) => {
-        let direction = 'ascending';
+        let direction = asc;
         if (
             sortConfig &&
             sortConfig.key === key &&
-            sortConfig.direction === 'ascending'
+            sortConfig.direction === asc
         ) {
-            direction = 'descending';
+            direction = desc;
         }
         setSortConfig({ key, direction });
     };

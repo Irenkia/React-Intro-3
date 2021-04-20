@@ -1,8 +1,13 @@
-import React from 'react';
+import React, { useContext } from "react";
+import { ThemeContext } from "../../context/ThemeContext.js";
 import './footerCSS/Footer.css'
 import PropTypes from 'prop-types'
 
 function Footer() {
+
+    const theme = useContext(ThemeContext);
+    const darkMode = theme.state.darkMode;
+
     const CreatorName = 'Ирина Тютюн';
     const published = 'Опубликовано';
     const numberPublicationDate = 8;
@@ -12,7 +17,7 @@ function Footer() {
     const backgroundDesign = 'Дизайн фона';
 
     return (
-        <div className="footer">
+        <div className={`footer ${darkMode ? "footer-dark" : "footer-light"}`}>
 
             <h2>{CreatorName}</h2>
             <p>{published} {numberPublicationDate}{monthPublicationDate}{yearPublicationDate}</p>

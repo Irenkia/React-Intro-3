@@ -1,8 +1,6 @@
 import React, { Component } from 'react';
 import TableRow from './TableRow';
 import '../task5/css5/Task5.css';
-//import '../taskCSS/Table.css';
-
 class StockList extends Component {
   constructor(props) {
     super(props);

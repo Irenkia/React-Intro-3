@@ -67,3 +67,31 @@ img {
     }
 
 }
+
+.bg {
+    height: 100vh;
+    padding: 50px;
+    overflow: hidden;
+    transition: 0.2s all linear;
+
+}
+
+.bg-light {
+    background-color: #fff;
+}
+
+.bg-dark {
+    background-color: #222;
+}
+
+.Absolute-Center 
+{
+  margin: auto;
+  position: absolute;
+  top: 0; left: 0; bottom: 0; right: 0;
+}
+
+.button-wrapper{
+    display: flex;	
+    justify-content: center;	
+}

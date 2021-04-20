@@ -1,10 +1,15 @@
-import React from 'react';
+import React, { useContext } from "react";
+import { ThemeContext } from "../../context/ThemeContext.js";
 import logo12 from '../../assets/images/react-12.png';
 import logo14 from '../../assets/images/react-14.jpg';
 import './navigationCSS/Navigation.css'
 import PropTypes from 'prop-types'
 
 function Navigation() {
+
+    const theme = useContext(ThemeContext);
+    const darkMode = theme.state.darkMode;
+
     const taskTitle = 'Входное задание в интернатуру по REACT';
     const lessonTopic = 'Тема:';
     const lessonContent = 'git, node, npm, основы html и css';
@@ -14,7 +19,7 @@ function Navigation() {
     const rubric_3 = 'Определить уровень умения верстки.';
 
     return (
-        <div className="navigation">
+        <div className={`navigation ${darkMode ? "navigation-dark" : "navigation-light"}`}>
 
             <div className="navigation-left">
                 <img src={logo12} alt="React logotype" />

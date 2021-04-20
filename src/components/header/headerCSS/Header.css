@@ -43,4 +43,11 @@ img {
     flex-shrink: auto;
 }
 
+.header-light {
+    background-color: #fff;
+}
+
+.header-dark {
+    background-color: #222;
+}
 

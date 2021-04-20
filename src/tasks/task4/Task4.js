@@ -174,40 +174,6 @@ class ToyotaCamry extends Component {
 
 const Task4 = () => {
 
-    // console.log(ArrTask4);
-    // console.log(Object.keys(ArrTask4));
-
-    // var obj_1 = { 10: 'a', 5: 'b', 7: 'c' };
-    // console.log(Object.keys(obj_1));
-
-    // var clone = Object.assign({}, obj_1);
-    // var obj_2 = {
-    //     a: 1,
-    //     b: {
-    //         c: 2,
-    //     },
-    // };
-    // //Пример: слияние объектов
-    // var newObj = Object.assign(clone, obj_2);
-    // console.log(clone); // изменился и сам целевой объект.
-    // console.log(newObj);
-
-    // //Пример: наследуемые и неперечисляемые свойства не копируются
-    // var obj_3 = Object.create({ foo: 1 }, { // foo является унаследованным свойством.
-    //     bar: {
-    //         value: 2  // bar является неперечисляемым свойством.
-    //     },
-    //     baz: {
-    //         value: 3,
-    //         enumerable: true  // baz является собственным перечисляемым свойством.
-    //     }
-    // });
-    // var copy = Object.assign({}, obj_3);
-    // console.log(copy); // { baz: 3 }
-
-    // const AddNewArrTask4 = { ...ArrTask4, id: 9, year: 2021, name: "9 поколение" };
-    // console.log(AddNewArrTask4);
-
     return (
         <div className="Table">
             <h3>Задание № 4</h3>

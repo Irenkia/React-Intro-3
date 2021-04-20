@@ -1,7 +1,5 @@
 import React, { Component } from 'react';
 import TabItems7 from './TabItems7';
-//import React, { useState } from 'react';
-//import { runSelectionSort } from "./RunSort";
 import '../taskCSS/Table.css'
 import '../task5/css5/Task5.css';
 
@@ -11,9 +9,9 @@ class ToyotaCamryTable7 extends Component {
     constructor(props) {
         super(props);
         this.state = {
-            idWay: "asc",
-            yearWay: "asc",
-            nameWay: "asc",
+            idWay: asc,
+            yearWay: asc,
+            nameWay: asc,
             data: TabItems7,
             idInput: "",
             yearInput: "",
@@ -32,9 +30,9 @@ class ToyotaCamryTable7 extends Component {
         if (a.id < b.id) {
             result = idWay === asc ? 1 : -1;
         }
-        // else if (a.id > b.id) {
-        //     result = idWay === asc ? 1 : -1;
-        // }
+        else if (a.id > b.id) {
+            result = idWay === asc ? 1 : -1;
+        }
         this.setState({ idWay: idWay === asc ? desc : asc });
         return result;
     };

@@ -45,3 +45,11 @@ p {
     display: inline-block;
     
 }
+
+.navigation-light {
+    background-color: #fff;
+}
+
+.navigation-dark {
+    background-color: #222;
+}

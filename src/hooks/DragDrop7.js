@@ -1,5 +1,5 @@
 import React, { useState, useRef } from 'react';
-import './css7/DragDrop7.css';
+import './hooksCSS/DragDrop7.css';
 
 const DragDrop7 = () => {
 
@@ -35,17 +35,6 @@ const DragDrop7 = () => {
         setList(listCopy);
     };
 
-    // const handleDragEnd = (e) => {
-    //     const listCopy = [...list];
-    //     const draggingItemContent = listCopy[draggingItem.current];
-    //     listCopy.splice(draggingItem.current, 1);
-    //     listCopy.splice(dragOverItem.current, 0, draggingItemContent);
-
-    //     draggingItem.current = null;
-    //     dragOverItem.current = null;
-    //     setList(listCopy);
-    // };
-
     return (
         <div>
             <ul>
@@ -56,7 +45,6 @@ const DragDrop7 = () => {
                             onDragStart={(e) => handleDragStart(e, index)}
                             onDragOver={(e) => e.preventDefault()}
                             onDragEnter={(e) => handleDragEnter(e, index)}
-                            // onDragEnd={handleDragEnd}
                             key={index} draggable>
                             {item}
                         </li>

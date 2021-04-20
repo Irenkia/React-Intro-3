@@ -1,7 +1,6 @@
 import React, { Component } from 'react';
 import TableRow from './TableRow';
 import '../task5/css5/Task5.css';
-//import '../taskCSS/Table.css';
 
 class UserList extends Component {
   constructor(props) {
@@ -38,3 +37,4 @@ class UserList extends Component {
   }
 }
 export default UserList;
+

@@ -1,8 +1,8 @@
 import React, { useState } from 'react';
-import TabItems7 from './TabItems7';
-import './css7/Task7Buttons.css';
+import TabItems7 from '../tasks/task7/TabItems7';
+import './hooksCSS/Buttons7.css';
 
-const Task7Buttons = () => {
+const Buttons7 = () => {
     const [active, setActive] = useState(0);
 
     return (
@@ -38,7 +38,7 @@ const TabItemComponent = ({
     )
 };
 
-export default Task7Buttons;
+export default Buttons7;
 
 
 
