@@ -77,11 +77,11 @@ img {
 }
 
 .bg-light {
-    background-color: #fff;
+    background-color: rgb(204, 204, 236);
 }
 
 .bg-dark {
-    background-color: #222;
+    background-color: rgb(61, 60, 63);
 }
 
 .button-wrapper{

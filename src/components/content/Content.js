@@ -12,6 +12,7 @@ import { ThemeContext } from "../../context/ThemeContext.js";
 //import Task7 from '../../tasks/task7/Task7.js';
 //import Task9 from '../../tasks/task9/Task9.js';
 import Task10 from '../../tasks/task10/Task10.js';
+//import Task11 from '../../tasks/task11/Task11.js';
 function Content() {
 
     const theme = useContext(ThemeContext);
@@ -35,6 +36,7 @@ function Content() {
             {/* <Task7 /> */}
             {/* <Task9 /> */}
             <Task10 />
+            {/* <Task11 /> */}
         </div>
 
     );
