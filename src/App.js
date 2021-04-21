@@ -11,7 +11,6 @@ function App() {
 
     return (
         <div>
-
             <SwitchButton />
             <Article className={`bg ${darkMode ? "bg-dark" : "bg-light"}`} />
         </div>

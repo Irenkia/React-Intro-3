@@ -1,15 +1,28 @@
-import React from 'react';
+import React, { Component } from "react";
 
-export const themes = {
-    light: {
-        foreground: '#000000',
-        background: '#eeeeee',
-    },
-    dark: {
-        foreground: '#ffffff',
-        background: '#222222',
-    },
-};
+const { Provider, Consumer } = React.createContext();
+class ThemeContextProvider extends Component {
+    state = {
+        theme: "Day"
+    };
 
-export const ThemeContext = React.createContext(themes.dark); // значение по умолчанию
+    toggleTheme = () => {
+        this.setState(prevState => {
+            return {
+                theme: prevState.theme === "Day" ? "Night" : "Day"
+            };
+        });
+    };
 
+    render() {
+        return (
+            <Provider
+                value={{ theme: this.state.theme, toggleTheme: this.toggleTheme }}
+            >
+                {this.props.children}
+            </Provider>
+        );
+    }
+}
+
+export { ThemeContextProvider, Consumer as ThemeContextConsumer };

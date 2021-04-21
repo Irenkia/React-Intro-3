@@ -1,18 +1,23 @@
-import React, { Component } from 'react';
-import { ThemeContext } from './theme-context';
+import React from "react";
+import { ThemeContextConsumer } from "./theme-context";
+import './css10/Task10.css';
 
-class ThemedButton extends Component {
-    render() {
-        let props = this.props;
-        let theme = this.context;
-        return (
-            <button
-                {...props}
-                style={{ backgroundColor: theme.background }}
-            />
-        );
-    }
+function Button(props) {
+    return (
+        <ThemeContextConsumer>
+            {context => (
+                <button onClick={context.toggleTheme} className="button">
+                    Переключить
+                    <span role="img" aria-label="sun">
+                        🌞
+          </span>
+                    <span role="img" aria-label="moon">
+                        🌚
+          </span>
+                </button>
+            )}
+        </ThemeContextConsumer>
+    );
 }
-ThemedButton.contextType = ThemeContext;
-export default ThemedButton;
 
+export default Button;
