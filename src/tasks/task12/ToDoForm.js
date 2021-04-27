@@ -2,7 +2,7 @@ import React, { useState } from 'react';
 //import Task12 from "./Task12.js"
 import "./css12/Task12.css";
 
-const NewToDo = ({ addNewToDo }) => {
+const ToDoForm = ({ addNewToDo }) => {
     const [input, setInput] = useState(" ");
 
     const handleInput = (e) => {
@@ -11,9 +11,9 @@ const NewToDo = ({ addNewToDo }) => {
 
     const onSubmit = (e) => {
         e.preventDefault();
-        // if (input.trim()) {
-        //     addNewToDo(input);
-        // }
+        if (!input.trim()) {
+            addNewToDo(input);
+        }
         setInput('');
     }
 
@@ -29,4 +29,4 @@ const NewToDo = ({ addNewToDo }) => {
 
 };
 
-export default NewToDo;
+export default ToDoForm;

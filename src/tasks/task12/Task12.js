@@ -1,6 +1,6 @@
 import React, { useState } from "react";
 import ToDo from "./ToDo";
-import NewToDo from "./NewToDo";
+import ToDoForm from "./ToDoForm";
 import "./css12/Task12.css";
 
 const Task12 = () => {
@@ -23,7 +23,7 @@ const Task12 = () => {
             {toDos.map(({ text, id, active }) => (
                 <ToDo key={id} text={text} active={active} />
             ))}
-            <NewToDo ddNewToDo={addNewToDo} />
+            <ToDoForm ddNewToDo={addNewToDo} />
         </div>
     );
 };
