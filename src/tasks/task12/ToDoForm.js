@@ -1,27 +1,31 @@
 import React, { useState } from 'react';
-//import Task12 from "./Task12.js"
 import "./css12/Task12.css";
 
-const ToDoForm = ({ addNewToDo }) => {
+const TodoForm = (props) => {
     const [input, setInput] = useState(" ");
 
-    const handleInput = (e) => {
+    const handleChange = (e) => {
         setInput(e.target.value);
     };
 
-    const onSubmit = (e) => {
+    const handleSubmit = (e) => {
         e.preventDefault();
-        if (!input.trim()) {
-            addNewToDo(input);
-        }
+        // if (!input.trim()) {
+        //     addNewToDo(input);
+        // }
+        props.onSubmit({
+            id: Math.floor(Math.random() * 10000),
+            text: input,
+            complete: false
+        });
         setInput('');
     }
 
     return (
         <div>
-            <form onSubmit={onSubmit}>
-                <input type="text" placeholder="Новое сообщение" value={input} onChange={handleInput} />
-                <button type="submit">Добавить новое сообщение</button>
+            <form onSubmit={handleSubmit}>
+                <input type="text" placeholder="написать задачу..." value={input} onChange={handleChange} />
+                <button onClick={handleSubmit}>Добавить</button>
             </form>
         </div>
 
@@ -29,4 +33,4 @@ const ToDoForm = ({ addNewToDo }) => {
 
 };
 
-export default ToDoForm;
+export default TodoForm;

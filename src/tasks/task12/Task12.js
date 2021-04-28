@@ -1,32 +1,27 @@
-import React, { useState } from "react";
-import ToDo from "./ToDo";
-import ToDoForm from "./ToDoForm";
+import React from "react";
 import "./css12/Task12.css";
+import TodoList from "./TodoList";
 
-const Task12 = () => {
-
-    const [toDos, setToDos] = useState([{ id: 1, text: "Сообщения :", active: false }]);
-
-    const createToDo = (text) => ({
-        id: new Date().getTime(),
-        text,
-        active: false
-    });
-
-    const addNewToDo = (text) => {
-        setToDos((toDos) => ([...toDos, createToDo(text)]))
-    };
-
+function Task12() {
     return (
         <div className="Task12">
             <h3>Задание № 12</h3>
-            {toDos.map(({ text, id, active }) => (
-                <ToDo key={id} text={text} active={active} />
-            ))}
-            <ToDoForm ddNewToDo={addNewToDo} />
+            <h1>To Do List</h1>
+            <TodoList />
         </div>
     );
-};
+}
 
 export default Task12;
+
+
+
+
+
+
+
+
+
+
+
 
