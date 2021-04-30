@@ -1,6 +1,7 @@
 import React, { useState } from "react";
 import TodoForm from "./TodoForm";
 import Todo from "./Todo";
+import "./css12/Task12.css";
 
 function TodoList({ onClick }) {
     const [todos, setTodos] = useState([]);
@@ -52,6 +53,7 @@ function TodoList({ onClick }) {
     return (
         <>
             <TodoForm onSubmit={addTodo} />
+
             <Todo
                 todos={todos}
                 completeTodo={completeTodo}
@@ -63,6 +65,7 @@ function TodoList({ onClick }) {
                 setInputValue={setInputValue}
             />
         </>
+
     );
 }
 

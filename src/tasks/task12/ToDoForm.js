@@ -22,13 +22,15 @@ const TodoForm = (props) => {
     }
 
     return (
-        <div>
-            <form onSubmit={handleSubmit}>
-                <input type="text" placeholder="написать задачу..." value={input} onChange={handleChange} />
-                <button onClick={handleSubmit}>Добавить</button>
-            </form>
-        </div>
+        <div className="todoList">
+            <div className="header">
+                <form onSubmit={handleSubmit}>
+                    <input type="text" placeholder="написать задачу..." value={input} onChange={handleChange} />
+                    <button onClick={handleSubmit}>Добавить</button>
 
+                </form>
+            </div>
+        </div>
     );
 
 };

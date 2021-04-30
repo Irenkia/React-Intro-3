@@ -53,9 +53,9 @@ class ToyotaCamryTable7 extends Component {
     sortByName = (array, field) => {
         const { nameWay } = this.state;
         const n = array.length;
-        for (var i = 0; i < n - 1; i++) {
-            var min = i;
-            for (var j = i + 1; j < n; j++) {
+        for (let i = 0; i < n - 1; i++) {
+            let min = i;
+            for (let j = i + 1; j < n; j++) {
                 if (nameWay === asc && array[j][field] < array[min][field]) {
                     min = j;
                 }
@@ -63,7 +63,7 @@ class ToyotaCamryTable7 extends Component {
                     min = j;
                 }
             }
-            var t = array[min];
+            let t = array[min];
             array[min] = array[i];
             array[i] = t;
         }
