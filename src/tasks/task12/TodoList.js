@@ -42,19 +42,21 @@ function TodoList({ onClick }) {
     const editTodo = (id, text) => {
         let editTodos = todos.map((todo) => {
             if (todo.id === id) {
-                todo.text = [...text, text];
+                todo.text = text;
+
             }
             return todo;
+
         });
         setTodos(editTodos);
         setEdit(false);
+        console.log(editTodos);
     };
-
     return (
         <>
-            <TodoForm onSubmit={addTodo} key={todos.id} />
+            <TodoForm onSubmit={addTodo} />
 
-            <Todo key={todos.id}
+            <Todo
                 todos={todos}
                 completeTodo={completeTodo}
                 removeTodo={removeTodo}

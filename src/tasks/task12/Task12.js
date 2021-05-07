@@ -7,7 +7,7 @@ const Task12 = () => {
         <div>
             <h3>Задание № 12</h3>
             <h1>To Do List</h1>
-            <div id="container">
+            <div>
                 <TodoList />
             </div>
         </div>

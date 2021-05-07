@@ -12,18 +12,18 @@ const Todo = ({
     setInputValue
 }) => {
     return todos.map((todo) => (
-        <div className="todoList">
-            <div className="header">
+        <div className="todoList" key={todo.id}>
+            <div className="test">
 
                 {editId === todo.id ? (<input type="text" value={inputValue}
                     onChange={(e) => setInputValue(e.target.value)} />) : (
                     <div
-                        key={todo.id}
+
                         // className={todo.isComplete ? "complete" : ""}
                         className={todo.isComplete ? "theList li" : ""}
                         onClick={() => completeTodo(todo.id)}
                     >
-                        {todo.text}
+                        <h3>{todo.text}</h3>
                     </div>
                 )}
                 {editId === todo.id ? (

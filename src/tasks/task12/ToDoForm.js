@@ -20,9 +20,9 @@ const TodoForm = (props) => {
 
     return (
         <div className="todoList">
-            <div className="header">
-                <form onSubmit={handleSubmit} key={props.id}>
-                    <input type="text" placeholder="написать задачу..." value={input} onChange={handleChange} key={props.id} />
+            <div className="test">
+                <form onSubmit={handleSubmit}>
+                    <input type="text" placeholder="написать задачу..." value={input} onChange={handleChange} />
                     <button onClick={handleSubmit}>Добавить</button>
 
                 </form>
