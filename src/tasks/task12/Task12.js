@@ -2,7 +2,7 @@ import React from "react";
 import "./css12/Task12.css";
 import TodoList from "./TodoList";
 
-function Task12() {
+const Task12 = () => {
     return (
         <div>
             <h3>Задание № 12</h3>

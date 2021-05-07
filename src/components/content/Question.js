@@ -1,3 +1,4 @@
+//import React, { useState } from 'react';
 import React from 'react';
 import logo1v from '../../assets/images/version-control-system.png';
 import logo1g from '../../assets/images/git-4.jpg';
@@ -96,7 +97,6 @@ const Question = (props) => {
             </div>
         )
     });
-
     return (
         <div className="app">
             <div className="list">

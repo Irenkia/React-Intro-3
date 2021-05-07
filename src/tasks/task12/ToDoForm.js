@@ -2,7 +2,7 @@ import React, { useState } from 'react';
 import "./css12/Task12.css";
 
 const TodoForm = (props) => {
-    const [input, setInput] = useState(" ");
+    const [input, setInput] = useState("");
 
     const handleChange = (e) => {
         setInput(e.target.value);
@@ -10,9 +10,6 @@ const TodoForm = (props) => {
 
     const handleSubmit = (e) => {
         e.preventDefault();
-        // if (!input.trim()) {
-        //     addNewToDo(input);
-        // }
         props.onSubmit({
             id: Math.floor(Math.random() * 10000),
             text: input,
@@ -24,8 +21,8 @@ const TodoForm = (props) => {
     return (
         <div className="todoList">
             <div className="header">
-                <form onSubmit={handleSubmit}>
-                    <input type="text" placeholder="написать задачу..." value={input} onChange={handleChange} />
+                <form onSubmit={handleSubmit} key={props.id}>
+                    <input type="text" placeholder="написать задачу..." value={input} onChange={handleChange} key={props.id} />
                     <button onClick={handleSubmit}>Добавить</button>
 
                 </form>

@@ -17,7 +17,7 @@ function TodoList({ onClick }) {
             return;
         }
 
-        const newTodos = [todo, ...todos];
+        const newTodos = [...todos, todo];
 
         setTodos(newTodos);
         console.log(newTodos);
@@ -42,7 +42,7 @@ function TodoList({ onClick }) {
     const editTodo = (id, text) => {
         let editTodos = todos.map((todo) => {
             if (todo.id === id) {
-                todo.text = text;
+                todo.text = [...text, text];
             }
             return todo;
         });
@@ -52,9 +52,9 @@ function TodoList({ onClick }) {
 
     return (
         <>
-            <TodoForm onSubmit={addTodo} />
+            <TodoForm onSubmit={addTodo} key={todos.id} />
 
-            <Todo
+            <Todo key={todos.id}
                 todos={todos}
                 completeTodo={completeTodo}
                 removeTodo={removeTodo}
@@ -70,3 +70,4 @@ function TodoList({ onClick }) {
 }
 
 export default TodoList;
+
