@@ -13,7 +13,8 @@ import Question from './Question.js';
 //import Task9 from '../../tasks/task9/Task9.js';
 //import Task10 from '../../tasks/task10/Task10.js';
 //import Task11 from '../../tasks/task11/Task11.js';
-import Task12 from '../../tasks/task12/Task12.js';
+//import Task12 from '../../tasks/task12/Task12.js';
+//import Task13 from '../../tasks/task13/Task13.js';
 function Content() {
 
     const theme = useContext(ThemeContext);
@@ -38,7 +39,8 @@ function Content() {
             {/* <Task9 /> */}
             {/* <Task10 /> */}
             {/* <Task11 /> */}
-            <Task12 />
+            {/* <Task12 /> */}
+            {/* <Task13 /> */}
         </div>
 
     );

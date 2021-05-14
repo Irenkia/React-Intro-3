@@ -41,12 +41,12 @@ function TodoList({ onClick }) {
 
     const editTodo = (id, text) => {
         let editTodos = todos.map((todo) => {
+            let todoNew = { ...todo };
             if (todo.id === id) {
-                todo.text = text;
-
+                //todo.text = text;
+                todoNew.text = text;
             }
-            return todo;
-
+            return todoNew;
         });
         setTodos(editTodos);
         setEdit(false);
