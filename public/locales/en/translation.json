@@ -1,0 +1,23 @@
+{
+    "Hi": "Hi",
+    "Welcome": "Welcome",
+    "taskTitle": "REACT Internship Entry Assignment",
+    "lessonTopic": "Subject:",
+    "lessonContent": "git, node, npm, основы html and css",
+    "lessonGoal": "Purpose: ",
+    "rubric_1": "Learn basic git, node, npm functions. ",
+    "rubric_2": "Prepare the system for further work.",
+    "rubric_3": "Determine the level of layout skill. ",
+    "topicTitle": "Discussed material: ",
+    "readTopic": "(read the topic) ",
+    "description_1": "What is a version control system and why is it needed",
+    "description_2": "Git: a. checkout, add, commit, pull, push; b. Branching and merging basics ",
+    "description_3": "What is node js, why is it needed and how to install it",
+    "description_4": "What is a package manager, npm installation",
+    "description_5": "Html: tags, html page structure, block and inline elements, lists, tables, attributes, text, anchors, links, w3c validation ",
+    "description_6": "Css: styles, classes, identifiers, selectors, pseudo-classes, pseudo-elements",
+    "CreatorName": "Iryna Tyutyun",
+    "published": "Published",
+    "monthPublicationDate": "January",
+    "backgroundDesign": "Background Design"
+}

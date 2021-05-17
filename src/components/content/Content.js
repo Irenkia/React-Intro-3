@@ -3,6 +3,7 @@ import PropTypes from 'prop-types';
 import React, { useContext } from "react";
 import { ThemeContext } from "../../context/ThemeContext.js";
 import Question from './Question.js';
+import { useTranslation } from "react-i18next";
 //import Table from '../../tasks/task2/Table.js';
 //import Task2 from '../../tasks/task2/Task2.js';
 //import Task3 from '../../tasks/task3/Task3.js';
@@ -17,17 +18,16 @@ import Question from './Question.js';
 //import Task13 from '../../tasks/task13/Task13.js';
 function Content() {
 
+    const { t } = useTranslation();
+
     const theme = useContext(ThemeContext);
     const darkMode = theme.state.darkMode;
-
-    const topicTitle = 'Обсуждаемый материал:';
-    const readTopic = '(читать тему)';
 
     return (
         <div className={`content ${darkMode ? "content-dark" : "content-light"}`}>
 
-            <h1>{topicTitle}</h1>
-            <Question theme={readTopic} />
+            <h1>{t("topicTitle")}</h1>
+            <Question theme={t("readTopic")} />
 
             {/* <Table /> */}
             {/* <Task2 /> */}
