@@ -16,6 +16,8 @@ import { useTranslation } from "react-i18next";
 //import Task11 from '../../tasks/task11/Task11.js';
 //import Task12 from '../../tasks/task12/Task12.js';
 //import Task13 from '../../tasks/task13/Task13.js';
+//import Task14 from '../../tasks/task14/Task14.js';
+
 function Content() {
 
     const { t } = useTranslation();
@@ -41,6 +43,8 @@ function Content() {
             {/* <Task11 /> */}
             {/* <Task12 /> */}
             {/* <Task13 /> */}
+            {/* <Task14 />  */}
+
         </div>
 
     );

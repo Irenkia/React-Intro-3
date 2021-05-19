@@ -22,7 +22,7 @@ function Footer() {
             <p>{t("published")} {numberPublicationDate}{t("monthPublicationDate")}{yearPublicationDate}</p>
             <a href="https://github.com/Irenkia/React-Intro-3" target="_blank" rel="noreferrer">{linkToGithub}</a>
             <p>{t("backgroundDesign")}</p>
-            <a href="https://ru.depositphotos.com/39223635/stock-illustration-ice-abstract-geometric-vector-background.html" target="_blank" rel="noreferrer">шаблон</a>
+            <a href="https://ru.depositphotos.com/39223635/stock-illustration-ice-abstract-geometric-vector-background.html" target="_blank" rel="noreferrer">{t("template")}</a>
         </div>
     );
 
