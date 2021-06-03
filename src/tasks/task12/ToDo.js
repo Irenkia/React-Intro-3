@@ -19,7 +19,6 @@ const Todo = ({
                     onChange={(e) => setInputValue(e.target.value)} />) : (
                     <div
 
-                        // className={todo.isComplete ? "complete" : ""}
                         className={todo.isComplete ? "theList li" : ""}
                         onClick={() => completeTodo(todo.id)}
                     >

@@ -43,7 +43,6 @@ function TodoList({ onClick }) {
         let editTodos = todos.map((todo) => {
             let todoNew = { ...todo };
             if (todo.id === id) {
-                //todo.text = text;
                 todoNew.text = text;
             }
             return todoNew;

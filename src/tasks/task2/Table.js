@@ -45,6 +45,7 @@ const ProductTable = (props) => {
         }
         return sortConfig.key === name ? sortConfig.direction : undefined;
     };
+
     return (
         <div>
             <h3>Задание № 2</h3>

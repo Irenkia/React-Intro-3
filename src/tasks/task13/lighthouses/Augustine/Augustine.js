@@ -9,8 +9,15 @@ const Augustine = () => (
             <figcaption>Photo: Kim Young Seng</figcaption>
         </figure>
         <p>
-            St. Augustine was home to the first lighthouse in Florida, though the first structure fell into the ocean after its foundation eroded. The newer, current lighthouse was constructed on Anastasia Island and completed in 1874. The building received indoor plumbing in 1907 and the light was electrified in 1936 and automated in 1955. After lighthouse keepers were no longer needed, the keeper’s house began to be rented out to local residents.
-    </p>
+            <br>St. Augustine was home to the first lighthouse in Florida, </br>
+            <br> though the first structure fell into the ocean after </br>
+            <br>its foundation eroded. The newer, current lighthouse was </br>
+            <br>constructed on Anastasia Island and completed in 1874.</br>
+            <br>The building received indoor plumbing in 1907 and the  </br>
+            <br>light was electrified in 1936 and automated in 1955.</br>
+            <br>After lighthouse keepers were no longer needed, the </br>
+            <br>keeper’s house began to be rented out to local residents.</br>
+        </p>
     </div>
 );
 

@@ -4,7 +4,7 @@ import React, { useContext } from "react";
 import { ThemeContext } from "../../context/ThemeContext.js";
 import Question from './Question.js';
 import { useTranslation } from "react-i18next";
-//import Table from '../../tasks/task2/Table.js';
+// import Table from '../../tasks/task2/Table.js';
 //import Task2 from '../../tasks/task2/Task2.js';
 //import Task3 from '../../tasks/task3/Task3.js';
 //import Task4 from '../../tasks/task4/Task4.js';
